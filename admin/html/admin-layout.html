@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khung Quản Trị - ATVMEDIA</title>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/css/admin-layout.css">
+
+</head>
+<body>
+
+  <!-- ================= SIDEBAR CHÍNH ================= -->
+  <aside class="admin-sidebar" id="adminSidebar">
+    <!-- Logo/Brand -->
+    <a href="admin-dashboard.html" class="sidebar-brand">
+      <i class="bi bi-speedometer2 me-2"></i> ATVMEDIA
+    </a>
+
+    <!-- Danh sách Menu -->
+    <div class="sidebar-menu">
+      <ul class="nav flex-column">
+        
+        <!-- Mục Đơn (Không có menu con) -->
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="bi bi-speedometer2 icon-main"></i> Tổng quan
+          </a>
+        </li>
+
+        <!-- Mục Menu Có Submenu (Quản lý Dịch vụ) -->
+        <li class="nav-item">
+          <!-- Thuộc tính data-bs-toggle="collapse" giúp mở ra đóng vào menu con -->
+          <a href="#menuDichVu" data-bs-toggle="collapse" class="nav-link active" aria-expanded="true">
+            <i class="bi bi-layers icon-main"></i> Quản lý Dịch vụ
+            <i class="bi bi-chevron-down icon-arrow"></i>
+          </a>
+          <div class="collapse show sidebar-submenu" id="menuDichVu">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="admin-list-service.html" class="nav-link">Danh sách Dịch vụ</a></li>
+              <li class="nav-item"><a href="admin-add-service.html" class="nav-link active">Thêm Dịch vụ mới</a></li>
+              <li class="nav-item"><a href="admin-categories.html" class="nav-link">Danh mục</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#menuTinTuc" data-bs-toggle="collapse" class="nav-link" aria-expanded="false">
+            <i class="bi bi-newspaper icon-main"></i> Quản lý Tin tức
+            <i class="bi bi-chevron-down icon-arrow"></i>
+          </a>
+          <div class="collapse sidebar-submenu" id="menuTinTuc">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link">Tất cả bài viết</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Viết bài mới</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="bi bi-envelope-paper icon-main"></i> Liên hệ / Báo giá
+            <span class="badge bg-danger ms-auto rounded-pill">5</span>
+          </a>
+        </li>
+
+        <!-- Dòng kẻ chia cắt -->
+        <hr class="border-secondary opacity-25 my-3 mx-3">
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="bi bi-gear icon-main"></i> Cài đặt Hệ thống
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- ================= KHUNG NỘI DUNG BÊN PHẢI ================= -->
+  <div class="admin-wrapper" id="adminWrapper">
+    
+    <!-- TOPBAR -->
+    <header class="admin-topbar">
+      <!-- Nút Toggle Menu (Thu gọn/Mở rộng Sidebar) -->
+      <button class="toggle-btn" id="sidebarToggleBtn">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <!-- Profile & Công cụ bên phải Topbar -->
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" class="text-secondary fs-5" title="Xem website"><i class="bi bi-globe"></i></a>
+        
+        <!-- Dropdown Tài khoản -->
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-decoration-none text-dark dropdown-toggle" data-bs-toggle="dropdown">
+            <img src="https://ui-avatars.com/api/?name=Admin&background=0d6efd&color=fff" alt="Avatar" width="32" height="32" class="rounded-circle me-2">
+            <span class="fw-medium">Admin</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 mt-2">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Hồ sơ cá nhân</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-key me-2"></i>Đổi mật khẩu</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-box-arrow-right me-2"></i>Đăng xuất</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- KHU VỰC NỘI DUNG CHÍNH (Nhúng các file khác vào đây) -->
+    <main class="admin-content">
+      
+      <!-- BREADCRUMB -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Tổng quan</a></li>
+          <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Dịch vụ</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Thêm mới</li>
+        </ol>
+      </nav>
+
+      <!-- NỘI DUNG THỰC TẾ CỦA TRANG SẼ ĐẶT Ở ĐÂY -->
+      <div class="card border-0 shadow-sm">
+        <div class="card-body" style="min-height: 400px; display: flex; align-items: center; justify-content: center; flex-direction: column; color: #94a3b8;">
+          <i class="bi bi-puzzle fs-1 mb-3 text-secondary"></i>
+          <h4>Khu vực Content</h4>
+          <p>Tại đây bạn sẽ copy/paste đoạn form CKEditor ở bước trước vào đây.</p>
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- jQuery & Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script xử lý thu gọn/mở rộng Sidebar -->
+  <script>
+    document.getElementById('sidebarToggleBtn').addEventListener('click', function () {
+      const sidebar = document.getElementById('adminSidebar');
+      const wrapper = document.getElementById('adminWrapper');
+      
+      // Xử lý cho màn hình Mobile (dưới 992px)
+      if (window.innerWidth < 992) {
+        sidebar.classList.toggle('show-mobile');
+      } 
+      // Xử lý cho màn hình Desktop
+      else {
+        sidebar.classList.toggle('collapsed');
+        wrapper.classList.toggle('expanded');
+      }
+    });
+
+    // Tự động đóng sidebar mobile nếu người dùng click ra ngoài khu vực content
+    document.getElementById('adminWrapper').addEventListener('click', function(e) {
+      if (window.innerWidth < 992) {
+        const sidebar = document.getElementById('adminSidebar');
+        if (sidebar.classList.contains('show-mobile')) {
+          sidebar.classList.remove('show-mobile');
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

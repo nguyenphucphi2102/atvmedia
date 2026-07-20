@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thêm Dịch Vụ Mới - ATVMEDIA Admin</title>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.ckeditor.com/4.22.1/full/ckeditor.js"></script>
+<link rel="stylesheet" href="/admin/css/admin-add-service.css">
+</head>
+<body>
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="admin-sidebar" id="adminSidebar">
+    <a href="#" class="sidebar-brand">
+      <i class="bi bi-box-fill text-primary me-2"></i> ATV CMS
+    </a>
+
+    <div class="sidebar-menu">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="bi bi-speedometer2 icon-main"></i> Tổng quan
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#menuDichVu" data-bs-toggle="collapse" class="nav-link active" aria-expanded="true">
+            <i class="bi bi-layers icon-main"></i> Quản lý Dịch vụ
+            <i class="bi bi-chevron-down icon-arrow"></i>
+          </a>
+          <div class="collapse show sidebar-submenu" id="menuDichVu">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="admin-list-service.html" class="nav-link">Danh sách Dịch vụ</a></li>
+              <li class="nav-item"><a href="admin-add-service.html" class="nav-link active">Thêm Dịch vụ mới</a></li>
+              <li class="nav-item"><a href="admin-categories.html" class="nav-link">Danh mục</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#menuTinTuc" data-bs-toggle="collapse" class="nav-link" aria-expanded="false">
+            <i class="bi bi-newspaper icon-main"></i> Quản lý Tin tức
+            <i class="bi bi-chevron-down icon-arrow"></i>
+          </a>
+          <div class="collapse sidebar-submenu" id="menuTinTuc">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link">Tất cả bài viết</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Viết bài mới</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="bi bi-envelope-paper icon-main"></i> Liên hệ / Báo giá
+            <span class="badge bg-danger ms-auto rounded-pill">5</span>
+          </a>
+        </li>
+
+        <hr class="border-secondary opacity-25 my-3 mx-3">
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="bi bi-gear icon-main"></i> Cài đặt Hệ thống
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN WRAPPER ================= -->
+  <div class="admin-wrapper" id="adminWrapper">
+    
+    <!-- TOPBAR -->
+    <header class="admin-topbar">
+      <button class="toggle-btn" id="sidebarToggleBtn">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div class="d-flex align-items-center gap-3">
+        <a href="home.html" target="_blank" class="text-secondary fs-5" title="Xem website"><i class="bi bi-globe"></i></a>
+        
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-decoration-none text-dark dropdown-toggle" data-bs-toggle="dropdown">
+            <img src="https://ui-avatars.com/api/?name=Admin&background=0d6efd&color=fff" alt="Avatar" width="32" height="32" class="rounded-circle me-2">
+            <span class="fw-medium">Admin</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 mt-2">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Hồ sơ cá nhân</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-key me-2"></i>Đổi mật khẩu</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-box-arrow-right me-2"></i>Đăng xuất</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="admin-content">
+      
+      <!-- BREADCRUMB -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Tổng quan</a></li>
+          <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Dịch vụ</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Thêm mới</li>
+        </ol>
+      </nav>
+
+      <!-- FORM THÊM DỊCH VỤ -->
+      <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white py-3">
+          <h5 class="mb-0 fw-bold"><i class="bi bi-plus-circle text-primary me-2"></i>Thêm Mới Dịch Vụ / Lĩnh Vực</h5>
+        </div>
+        <div class="card-body p-4">
+          
+          <form action="#" method="POST" enctype="multipart/form-data">
+  
+  <div class="row">
+    <!-- CỘT BÊN TRÁI: ẢNH ĐẠI DIỆN (THUMBNAIL) -->
+    <div class="col-lg-4 mb-4">
+      <label class="form-label label-purple mb-2">Ảnh Đại Diện</label>
+      <div class="upload-image-box text-center p-3 border rounded-3 bg-light position-relative">
+        <div class="image-preview-wrapper mb-3 d-flex align-items-center justify-content-center bg-white border rounded" style="height: 280px; overflow: hidden;">
+          <div class="text-muted">
+            <i class="bi bi-image fs-1 d-block mb-2"></i>
+            <span class="fw-bold fs-5">600 x 450</span>
+            <p class="small mb-0 text-secondary">Vui lòng chọn hình ảnh đúng kích cỡ</p>
+          </div>
+        </div>
+        <input class="form-control" type="file" accept="image/*" id="thumbnailInput">
+        <label for="thumbnailInput" class="btn btn-light btn-sm position-absolute top-0 end-0 m-3 shadow-sm border rounded-circle p-2" title="Đổi ảnh">
+          <i class="bi bi-pencil-fill text-dark"></i>
+        </label>
+      </div>
+    </div>
+
+    <!-- CỘT BÊN PHẢI: CÁC TRƯỜNG NHẬP LIỆU -->
+    <div class="col-lg-8 mb-4">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label label-purple">Chọn Loại</label>
+          <select class="form-select">
+            <option value="" selected disabled>--- Chọn loại dịch vụ ---</option>
+            <option value="1">Thiết kế Phần mềm - Website</option>
+            <option value="2">Thành lập công ty</option>
+            <option value="3">Chữ ký số & Hóa đơn điện tử</option>
+            <option value="4">Thiết kế - In ấn các loại</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label label-purple">Tiêu Đề Dịch Vụ</label>
+          <input type="text" class="form-control" placeholder="Nhập tiêu đề dịch vụ..." required>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label label-purple">Mô Tả Ngắn (160 - 300 Ký Tự)</label>
+        <textarea class="form-control" rows="4" placeholder="Nhập đoạn giới thiệu ngắn hiển thị đầu bài viết..."></textarea>
+      </div>
+
+      <!-- <div class="mb-3">
+        <label class="form-label label-purple">Từ Khóa 1</label>
+        <input type="text" class="form-control" placeholder="Nhập từ khóa SEO 1...">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label label-purple">Từ Khóa 2</label>
+        <input type="text" class="form-control" placeholder="Nhập từ khóa SEO 2...">
+      </div> -->
+    </div>
+  </div>
+
+  <!-- NỘI DUNG CHI TIẾT (CKEDITOR) NẰM TRÊN TOÀN BỘ CHIỀU RỘNG BÊN DƯỚI -->
+  <div class="mb-4">
+    <label class="form-label label-purple mb-2">Nội Dung Chi Tiết</label>
+    <textarea name="post_content" id="NoiDungChiTiet"></textarea>
+  </div>
+
+  <hr class="my-4">
+
+  <div class="d-flex justify-content-end gap-2">
+    <button type="reset" class="btn btn-light border px-4"><i class="bi bi-x-circle me-1"></i>Hủy bỏ</button>
+    <button type="button" class="btn btn-secondary px-4"><i class="bi bi-eye me-1"></i>Xem trước</button>
+    <button type="submit" class="btn btn-primary px-4"><i class="bi bi-floppy me-1"></i>Lưu và Đăng bài</button>
+  </div>
+
+</form>
+
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script Sidebar Toggle -->
+  <script>
+    document.getElementById('sidebarToggleBtn').addEventListener('click', function () {
+      const sidebar = document.getElementById('adminSidebar');
+      const wrapper = document.getElementById('adminWrapper');
+      
+      if (window.innerWidth < 992) {
+        sidebar.classList.toggle('show-mobile');
+      } else {
+        sidebar.classList.toggle('collapsed');
+        wrapper.classList.toggle('expanded');
+      }
+    });
+  </script>
+
+  <!-- Script Khởi tạo CKEditor 4 -->
+  <script>
+    CKEDITOR.replace('NoiDungChiTiet', {
+      height: 450,
+      language: 'en'
+    });
+  </script>
+
+</body>
+</html>

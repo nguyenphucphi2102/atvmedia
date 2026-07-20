@@ -1,0 +1,96 @@
+/* ============================================================
+   in-an.css — CSS riêng cho trang thiet-ke-in-an.html
+   Kiểu "tech-card": khối minh hoạ trên cùng + tiêu đề + mô tả
+   Không chứa style header/footer — đã có ở header.css, footer.css
+   ============================================================ */
+
+:root {
+  --teal-900: #173d3e;
+  --teal-700: #285b5c;
+  --teal-600: #316f70;
+  --lime: #c6ff3d;
+  --white: #ffffff;
+  --ink: #0f2c2c;
+  --muted: #5f7d7c;
+}
+
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Tiêu đề trang */
+.tech-page-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  letter-spacing: 0.4px;
+  color: var(--teal-700);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+/* Thẻ dịch vụ */
+.tech-card {
+  display: block;
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(15, 44, 44, 0.08);
+  border: 1px solid #e9eeed;
+  height: 100%;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.tech-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(15, 44, 44, 0.14);
+}
+
+/* Khối minh hoạ trên cùng (thay cho ảnh thật) */
+.tech-card-img {
+  height: 190px;
+  background: linear-gradient(150deg, var(--teal-700), var(--teal-900));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s;
+}
+.tech-card-img i {
+  font-size: 2.8rem;
+  color: rgba(255, 255, 255, 0.85);
+  transition: 0.25s;
+}
+.tech-card:hover .tech-card-img i {
+  transform: scale(1.1);
+  color: var(--lime);
+}
+
+/* Nội dung thẻ */
+.tech-card-body {
+  padding: 1.3rem 1.4rem 1.5rem;
+}
+.tech-card-title {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--ink);
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
+}
+.tech-card-desc {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Đánh dấu mục đang active trong mega menu */
+.mega-item.active {
+  background: var(--lime) !important;
+}
+.mega-item.active .ic {
+  background: var(--teal-700) !important;
+  color: var(--lime) !important;
+}
