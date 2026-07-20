@@ -46,18 +46,11 @@ body {
   gap: 0.6rem;
   margin-bottom: 1.1rem;
 }
-.footer-brand .brand-mark {
-  width: 44px;
+.footer-brand .brand-logo {
   height: 44px;
-  border-radius: 10px;
-  background: var(--teal-700);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--lime);
-  font-weight: 800;
-  font-size: 1.1rem;
+  width: auto;
   flex-shrink: 0;
+  object-fit: contain;
 }
 .footer-brand .name {
   font-weight: 800;

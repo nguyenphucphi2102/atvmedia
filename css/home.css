@@ -1055,3 +1055,19 @@ section {
     display: inline-block;
   }
 }
+@media (max-width: 1024px) {
+  .hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+      135deg,
+      var(--teal-900) 0%,
+      var(--teal-700) 55%,
+      var(--teal-600) 100%
+    );
+    padding: 6.5rem 0 5rem;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+  }
+}

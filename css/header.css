@@ -70,18 +70,16 @@ body {
   align-items: center;
   gap: 0.6rem;
 }
-.brand-mark {
-  width: 44px;
+.brand-logo {
   height: 44px;
-  border-radius: 10px;
-  background: var(--teal-700);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--lime);
-  font-weight: 800;
-  font-size: 1.15rem;
+  width: auto;
   flex-shrink: 0;
+  object-fit: contain;
+}
+@media (max-width: 575.98px) {
+  .brand-logo {
+    height: 38px;
+  }
 }
 .brand-text {
   line-height: 1.1;
