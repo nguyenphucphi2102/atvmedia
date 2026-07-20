@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dịch vụ Thành lập Công ty - ATVMEDIA</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<!-- Google Font: Be Vietnam Pro -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- CSS dùng chung -->
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
+<!-- CSS riêng cho trang chi tiết dịch vụ -->
+<link rel="stylesheet" href="/css/service-detail.css">
+
+</head>
+<body>
+
+<!-- ===== TOP UTILITY BAR ===== -->
+<div class="topbar d-none d-md-block">
+  <div class="container d-flex justify-content-between align-items-center py-2">
+    <div>
+      <a href="tel:19001234"><i class="bi bi-telephone-fill me-1"></i>1900 1234</a>
+      <span class="divider"></span>
+      <a href="mailto:info@atvmedia.vn"><i class="bi bi-envelope-fill me-1"></i>info@atvmedia.vn</a>
+      <span class="divider"></span>
+      <span><i class="bi bi-geo-alt-fill me-1"></i>Hà Nội - Đà Nẵng - TP.HCM</span>
+    </div>
+    <div class="d-flex align-items-center">
+      <span class="me-1">Kết nối:</span>
+      <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+      <a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
+      <a href="#" class="social-link"><i class="bi bi-zalo"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MAIN HEADER ===== -->
+<header class="main-header sticky-top" id="mainHeader">
+  <nav class="navbar navbar-expand-lg py-2">
+    <div class="container">
+
+      <a class="navbar-brand" href="home.html">
+        <img src="/images/logo.png" alt="ATVMEDIA" class="brand-logo">
+        <div class="brand-text">
+          <div class="name">ATVMEDIA</div>
+          <div class="tag">Chuyển đổi số doanh nghiệp</div>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" style="box-shadow:none;">
+        <i class="bi bi-list" style="font-size:2rem; color:var(--teal-700);"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav main-nav mx-lg-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="home.html">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Giới thiệu</a></li>
+
+          <!-- MEGA MENU: LĨNH VỰC -->
+          <li class="nav-item has-mega" id="megaItem">
+            <a class="nav-link dropdown-toggle active" href="fields.html" id="megaToggle">Lĩnh vực</a>
+            <div class="mega-panel">
+              <div class="mega-title">Giải pháp theo lĩnh vực</div>
+              <div class="mega-grid">
+                <a href="dich-vu-thanh-lap-cong-ty.html" class="mega-item"><span class="ic"><i class="bi bi-building"></i></span><span>Dịch vụ Thành lập Công ty</span></a>
+                <a href="fields.html#f02" class="mega-item"><span class="ic"><i class="bi bi-file-earmark-lock2"></i></span><span>Đại lý Chữ ký số &amp; Hoá đơn Điện tử</span></a>
+                <a href="fields.html#f03" class="mega-item"><span class="ic"><i class="bi bi-code-slash"></i></span><span>Thiết kế Phần mềm &amp; Website</span></a>
+                <a href="fields.html#f04" class="mega-item"><span class="ic"><i class="bi bi-printer"></i></span><span>Thiết kế - In ấn Các loại</span></a>
+                <a href="fields.html#f05" class="mega-item"><span class="ic"><i class="bi bi-cart3"></i></span><span>Bán lẻ &amp; Thương mại điện tử</span></a>
+                <a href="fields.html#f06" class="mega-item"><span class="ic"><i class="bi bi-houses"></i></span><span>Trang Đăng tin Bất động sản</span></a>
+                <a href="fields.html#f07" class="mega-item"><span class="ic"><i class="bi bi-journal-check"></i></span><span>Dịch vụ Đăng ký Bộ Công Thương</span></a>
+                <a href="fields.html#f08" class="mega-item"><span class="ic"><i class="bi bi-megaphone"></i></span><span>Trang Đăng Quảng bá Thương hiệu</span></a>
+                <a href="fields.html#f09" class="mega-item"><span class="ic"><i class="bi bi-truck"></i></span><span>Vận tải - Kho bãi</span></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#">Hệ thống ATVMedia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+        </ul>
+        <a href="#" class="btn btn-cta ms-lg-3"><i class="bi bi-headset"></i>Liên hệ ngay</a>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="svc-hero">
+  <div class="blob blob-a"></div>
+  <div class="blob blob-b"></div>
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-7">
+        <div class="breadcrumb-row">
+          <a href="home.html">Trang chủ</a>
+          <i class="bi bi-chevron-right"></i>
+          <a href="fields.html">Lĩnh vực</a>
+          <i class="bi bi-chevron-right"></i>
+          <span>Thành lập Công ty</span>
+        </div>
+        <div class="svc-code">01 / 09 — Pháp lý doanh nghiệp</div>
+        <h1>Dịch vụ Thành lập Công ty trọn gói, nhanh chóng, đúng quy định</h1>
+        <p class="lead">Từ tư vấn loại hình doanh nghiệp, soạn hồ sơ, nộp Sở Kế hoạch &amp; Đầu tư đến khắc dấu và công bố thông tin — ATVMEDIA đồng hành cùng bạn trong suốt quá trình khởi nghiệp.</p>
+        <div class="svc-cta">
+          <a href="#bang-gia" class="btn-svc-primary"><i class="bi bi-tags me-2"></i>Xem bảng giá</a>
+          <a href="#tu-van" class="btn-svc-outline"><i class="bi bi-telephone-outbound me-2"></i>Nhận tư vấn miễn phí</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="svc-visual">
+          <div class="svc-visual-ring"></div>
+          <div class="svc-visual-core"><i class="bi bi-building"></i></div>
+          <div class="svc-float f1"><i class="bi bi-clock-history"></i>3–5 ngày làm việc</div>
+          <div class="svc-float f2"><i class="bi bi-patch-check"></i>Đúng quy định pháp luật</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TỔNG QUAN ================= -->
+<section class="sec-overview">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-8 reveal">
+        <div class="eyebrow">Tổng quan dịch vụ</div>
+        <h2 class="sec-title">Vì sao nên thành lập công ty cùng ATVMEDIA?</h2>
+        <p class="sec-sub mb-4">Chúng tôi xử lý toàn bộ thủ tục pháp lý ban đầu để bạn tập trung vào việc vận hành kinh doanh. Đội ngũ tư vấn am hiểu quy định hiện hành, cập nhật liên tục theo Luật Doanh nghiệp và các văn bản hướng dẫn mới nhất.</p>
+        <ul class="check-list">
+          <li><i class="bi bi-check-circle-fill"></i>Soạn thảo và nộp hồ sơ thành lập trong 3-5 ngày làm việc</li>
+          <li><i class="bi bi-check-circle-fill"></i>Tư vấn loại hình doanh nghiệp, ngành nghề và vốn điều lệ phù hợp</li>
+          <li><i class="bi bi-check-circle-fill"></i>Hỗ trợ khắc dấu, mở tài khoản ngân hàng, đăng ký thuế ban đầu</li>
+          <li><i class="bi bi-check-circle-fill"></i>Tư vấn miễn phí sau thành lập trong 30 ngày đầu tiên</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 reveal">
+        <div class="side-card">
+          <div class="side-card-item"><i class="bi bi-building-check"></i><div><b>500+</b><span>Doanh nghiệp đã thành lập</span></div></div>
+          <div class="side-card-item"><i class="bi bi-star-fill"></i><div><b>4.9/5</b><span>Đánh giá từ khách hàng</span></div></div>
+          <div class="side-card-item"><i class="bi bi-shield-check"></i><div><b>100%</b><span>Hồ sơ hợp lệ, đúng luật</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUY TRÌNH ================= -->
+<section class="sec-process-svc">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="eyebrow justify-content-center on-dark">Quy trình thực hiện</div>
+      <h2 class="sec-title text-white">5 bước hoàn tất thủ tục thành lập công ty</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-lg reveal">
+        <div class="proc-card">
+          <div class="num">01</div>
+          <h6>Tư vấn ban đầu</h6>
+          <p>Xác định loại hình doanh nghiệp, ngành nghề, vốn điều lệ phù hợp với kế hoạch kinh doanh.</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg reveal">
+        <div class="proc-card">
+          <div class="num">02</div>
+          <h6>Soạn hồ sơ</h6>
+          <p>Chuẩn bị đầy đủ hồ sơ đăng ký doanh nghiệp theo đúng quy định pháp luật hiện hành.</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg reveal">
+        <div class="proc-card">
+          <div class="num">03</div>
+          <h6>Nộp hồ sơ</h6>
+          <p>Nộp hồ sơ tại Sở Kế hoạch &amp; Đầu tư, theo dõi và xử lý phát sinh (nếu có).</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg reveal">
+        <div class="proc-card">
+          <div class="num">04</div>
+          <h6>Nhận giấy phép</h6>
+          <p>Nhận Giấy chứng nhận đăng ký doanh nghiệp, hỗ trợ khắc dấu và công bố thông tin.</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg reveal">
+        <div class="proc-card">
+          <div class="num">05</div>
+          <h6>Hỗ trợ sau thành lập</h6>
+          <p>Đăng ký thuế ban đầu, mở tài khoản ngân hàng, tư vấn kê khai thuế miễn phí 30 ngày.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HỒ SƠ CẦN CHUẨN BỊ ================= -->
+<section class="sec-docs">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-5 reveal">
+        <div class="eyebrow">Chuẩn bị hồ sơ</div>
+        <h2 class="sec-title">Bạn cần chuẩn bị những gì?</h2>
+        <p class="sec-sub">Chỉ cần cung cấp thông tin cơ bản, ATVMEDIA sẽ soạn thảo toàn bộ hồ sơ pháp lý còn lại cho bạn.</p>
+      </div>
+      <div class="col-lg-7 reveal">
+        <div class="docs-grid">
+          <div class="docs-item"><i class="bi bi-person-vcard"></i><span>CCCD/Hộ chiếu của người đại diện &amp; thành viên góp vốn</span></div>
+          <div class="docs-item"><i class="bi bi-signpost-2"></i><span>Địa chỉ trụ sở chính (có thể dùng dịch vụ cho thuê địa chỉ)</span></div>
+          <div class="docs-item"><i class="bi bi-cash-coin"></i><span>Thông tin vốn điều lệ dự kiến đăng ký</span></div>
+          <div class="docs-item"><i class="bi bi-diagram-3"></i><span>Ngành nghề kinh doanh dự kiến hoạt động</span></div>
+          <div class="docs-item"><i class="bi bi-award"></i><span>Tên công ty dự kiến (2-3 phương án để tra cứu trùng tên)</span></div>
+          <div class="docs-item"><i class="bi bi-percent"></i><span>Tỷ lệ góp vốn giữa các thành viên/cổ đông (nếu có)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BẢNG GIÁ ================= -->
+<section class="sec-pricing" id="bang-gia">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="eyebrow justify-content-center">Bảng giá</div>
+      <h2 class="sec-title">Chọn gói dịch vụ phù hợp với bạn</h2>
+      <p class="sec-sub mx-auto">Chi phí minh bạch, không phát sinh ẩn — bạn có thể nâng cấp gói bất kỳ lúc nào.</p>
+    </div>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-md-4 reveal">
+        <div class="price-card">
+          <div class="p-name">Cơ bản</div>
+          <div class="p-desc">Phù hợp hộ kinh doanh, cá nhân khởi nghiệp</div>
+          <div class="p-price">1.200.000<span>đ / lần</span></div>
+          <ul class="p-features">
+            <li><i class="bi bi-check2"></i>Soạn &amp; nộp hồ sơ đăng ký</li>
+            <li><i class="bi bi-check2"></i>Nhận Giấy chứng nhận ĐKDN</li>
+            <li><i class="bi bi-check2"></i>Tư vấn ngành nghề, vốn điều lệ</li>
+            <li class="disabled"><i class="bi bi-x-lg"></i>Khắc dấu &amp; mở tài khoản NH</li>
+            <li class="disabled"><i class="bi bi-x-lg"></i>Tư vấn thuế sau thành lập</li>
+          </ul>
+          <a href="#tu-van" class="btn-price-outline">Chọn gói này</a>
+        </div>
+      </div>
+      <div class="col-md-4 reveal">
+        <div class="price-card featured">
+          <div class="p-badge">Phổ biến nhất</div>
+          <div class="p-name">Tiêu chuẩn</div>
+          <div class="p-desc">Phù hợp công ty TNHH, cổ phần mới thành lập</div>
+          <div class="p-price">2.500.000<span>đ / lần</span></div>
+          <ul class="p-features">
+            <li><i class="bi bi-check2"></i>Trọn gói hồ sơ + Giấy chứng nhận ĐKDN</li>
+            <li><i class="bi bi-check2"></i>Khắc dấu tròn &amp; công bố thông tin</li>
+            <li><i class="bi bi-check2"></i>Hỗ trợ mở tài khoản ngân hàng</li>
+            <li><i class="bi bi-check2"></i>Đăng ký thuế ban đầu</li>
+            <li class="disabled"><i class="bi bi-x-lg"></i>Tư vấn thuế sau thành lập 30 ngày</li>
+          </ul>
+          <a href="#tu-van" class="btn-price-solid">Chọn gói này</a>
+        </div>
+      </div>
+      <div class="col-md-4 reveal">
+        <div class="price-card">
+          <div class="p-name">Trọn gói</div>
+          <div class="p-desc">Phù hợp doanh nghiệp cần hỗ trợ toàn diện</div>
+          <div class="p-price">3.800.000<span>đ / lần</span></div>
+          <ul class="p-features">
+            <li><i class="bi bi-check2"></i>Toàn bộ quyền lợi gói Tiêu chuẩn</li>
+            <li><i class="bi bi-check2"></i>Tư vấn kê khai thuế miễn phí 30 ngày</li>
+            <li><i class="bi bi-check2"></i>Tặng chữ ký số 1 năm đầu</li>
+            <li><i class="bi bi-check2"></i>Ưu tiên hỗ trợ 24/7</li>
+            <li><i class="bi bi-check2"></i>Miễn phí tư vấn hoá đơn điện tử</li>
+          </ul>
+          <a href="#tu-van" class="btn-price-outline">Chọn gói này</a>
+        </div>
+      </div>
+    </div>
+    <p class="text-center price-note">* Giá trên chưa bao gồm lệ phí nhà nước và phí dịch vụ bên thứ ba (nếu có). Báo giá cuối cùng sẽ được xác nhận sau khi tư vấn.</p>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec-faq">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-4 reveal">
+        <div class="eyebrow">Giải đáp</div>
+        <h2 class="sec-title">Câu hỏi thường gặp</h2>
+        <p class="sec-sub">Không tìm thấy câu trả lời bạn cần? Liên hệ trực tiếp với đội ngũ tư vấn của ATVMEDIA.</p>
+        <a href="#tu-van" class="field-link">Đặt câu hỏi cho chúng tôi <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="col-lg-8 reveal">
+        <div class="accordion svc-accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                Thành lập công ty mất bao lâu?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Thông thường từ 3-5 ngày làm việc kể từ khi hồ sơ hợp lệ được nộp tại Sở Kế hoạch &amp; Đầu tư, chưa tính thời gian khắc dấu và mở tài khoản ngân hàng (thường thêm 1-2 ngày).</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Vốn điều lệ tối thiểu là bao nhiêu?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Pháp luật hiện hành không quy định mức vốn điều lệ tối thiểu cho hầu hết ngành nghề (trừ một số ngành có điều kiện). Đội ngũ ATVMEDIA sẽ tư vấn mức vốn phù hợp với quy mô và kế hoạch kinh doanh của bạn.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Tôi có cần địa chỉ trụ sở là nhà riêng không?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Không bắt buộc. Bạn có thể sử dụng dịch vụ cho thuê địa chỉ đăng ký kinh doanh nếu chưa có văn phòng cố định. ATVMEDIA có thể hỗ trợ kết nối đối tác cung cấp dịch vụ này.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                Sau khi thành lập, tôi cần làm gì tiếp theo?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Bạn cần đăng ký chữ ký số, hoá đơn điện tử, kê khai thuế ban đầu và treo bảng hiệu tại trụ sở. ATVMEDIA có dịch vụ <a href="fields.html#f02">Chữ ký số &amp; Hoá đơn điện tử</a> để hỗ trợ bạn ngay sau bước này.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LĨNH VỰC LIÊN QUAN ================= -->
+<section class="sec-related">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="eyebrow justify-content-center">Có thể bạn cần thêm</div>
+      <h2 class="sec-title">Dịch vụ liên quan sau khi thành lập công ty</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal">
+        <a href="fields.html#f02" class="related-card">
+          <div class="ic"><i class="bi bi-file-earmark-lock2"></i></div>
+          <h6>Chữ ký số &amp; Hoá đơn Điện tử</h6>
+          <p>Đăng ký chữ ký số và xuất hoá đơn điện tử hợp chuẩn ngay sau khi có mã số thuế.</p>
+          <span class="go">Xem chi tiết <i class="bi bi-arrow-right"></i></span>
+        </a>
+      </div>
+      <div class="col-md-4 reveal">
+        <a href="fields.html#f03" class="related-card">
+          <div class="ic"><i class="bi bi-code-slash"></i></div>
+          <h6>Thiết kế Phần mềm &amp; Website</h6>
+          <p>Xây dựng website giới thiệu công ty chuyên nghiệp ngay từ những ngày đầu hoạt động.</p>
+          <span class="go">Xem chi tiết <i class="bi bi-arrow-right"></i></span>
+        </a>
+      </div>
+      <div class="col-md-4 reveal">
+        <a href="fields.html#f07" class="related-card">
+          <div class="ic"><i class="bi bi-journal-check"></i></div>
+          <h6>Đăng ký Bộ Công Thương</h6>
+          <p>Hoàn tất thủ tục đăng ký website/ứng dụng TMĐT nếu bạn kinh doanh trực tuyến.</p>
+          <span class="go">Xem chi tiết <i class="bi bi-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="sec-cta-svc" id="tu-van">
+  <div class="container reveal">
+    <h2>Sẵn sàng thành lập công ty của riêng bạn?</h2>
+    <p>Để lại thông tin, đội ngũ tư vấn ATVMEDIA sẽ liên hệ trong vòng 24h để hỗ trợ bạn hoàn tất thủ tục nhanh nhất.</p>
+    <form class="cta-form" onsubmit="return false;">
+      <input type="text" class="form-control" placeholder="Họ và tên" required>
+      <input type="tel" class="form-control" placeholder="Số điện thoại" required>
+      <button type="submit" class="btn-cta-solid">Gửi yêu cầu tư vấn</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="newsletter-box d-md-flex justify-content-between align-items-center">
+          <div class="mb-3 mb-md-0">
+            <h5><i class="bi bi-envelope-paper me-2"></i>Đăng ký nhận bản tin</h5>
+            <p class="mb-0">Cập nhật giải pháp chuyển đổi số, ưu đãi mới nhất từ ATVMEDIA.</p>
+          </div>
+          <form class="newsletter-form d-flex" style="min-width:320px;" onsubmit="return false;">
+            <input type="email" class="form-control" placeholder="Nhập email của bạn" required>
+            <button class="btn btn-send" type="submit">Đăng ký</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="row gy-4">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-brand">
+          <img src="/images/logo.png" alt="ATVMEDIA" class="brand-logo">
+          <div>
+            <div class="name">ATVMEDIA</div>
+            <div class="tag">Chuyển đổi số doanh nghiệp</div>
+          </div>
+        </div>
+        <p class="footer-about-text">
+          Hệ sinh thái chuyển đổi số được phát triển với nhiều giá trị. Tư vấn và triển khai giải pháp chuyên sâu giúp doanh nghiệp vận hành tối ưu, loại bỏ thủ tục rườm rà.
+        </p>
+        <div class="footer-social">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-3">
+        <h6 class="f-title">Lĩnh vực</h6>
+        <ul class="footer-links">
+          <li><a href="dich-vu-thanh-lap-cong-ty.html"><i class="bi bi-caret-right-fill"></i>Thành lập Công ty</a></li>
+          <li><a href="fields.html#f02"><i class="bi bi-caret-right-fill"></i>Chữ ký số &amp; Hoá đơn ĐT</a></li>
+          <li><a href="fields.html#f03"><i class="bi bi-caret-right-fill"></i>Thiết kế Phần mềm - Website</a></li>
+          <li><a href="fields.html#f04"><i class="bi bi-caret-right-fill"></i>Thiết kế - In ấn</a></li>
+          <li><a href="fields.html#f05"><i class="bi bi-caret-right-fill"></i>Bán lẻ &amp; TMĐT</a></li>
+          <li><a href="fields.html#f06"><i class="bi bi-caret-right-fill"></i>Đăng tin Bất động sản</a></li>
+          <li><a href="fields.html#f07"><i class="bi bi-caret-right-fill"></i>Đăng ký Bộ Công Thương</a></li>
+          <li><a href="fields.html#f08"><i class="bi bi-caret-right-fill"></i>Quảng bá Thương hiệu</a></li>
+          <li><a href="fields.html#f09"><i class="bi bi-caret-right-fill"></i>Vận tải - Kho bãi</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2">
+        <h6 class="f-title">Liên kết nhanh</h6>
+        <ul class="footer-links">
+          <li><a href="home.html"><i class="bi bi-caret-right-fill"></i>Trang chủ</a></li>
+          <li><a href="about.html"><i class="bi bi-caret-right-fill"></i>Giới thiệu</a></li>
+          <li><a href="#"><i class="bi bi-caret-right-fill"></i>Hệ thống ATVMedia</a></li>
+          <li><a href="#"><i class="bi bi-caret-right-fill"></i>Tin tức</a></li>
+          <li><a href="#"><i class="bi bi-caret-right-fill"></i>Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <h6 class="f-title">Thông tin liên hệ</h6>
+        <ul class="footer-links footer-contact">
+          <li><span class="ic"><i class="bi bi-geo-alt-fill"></i></span><span>26 Nguyễn Duy, Phường Cẩm Lệ, TP Đà Nẵng, Việt Nam</span></li>
+          <li><span class="ic"><i class="bi bi-telephone-fill"></i></span><span>1900 1234 (8:00 - 17:30, T2 - T7)</span></li>
+          <li><span class="ic"><i class="bi bi-envelope-fill"></i></span><span>info@atvmedia.vn</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom d-md-flex justify-content-between align-items-center">
+      <div>© 2026 ATVMEDIA.</div>
+      <div class="text-md-end">
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Điều khoản sử dụng</a>
+        <a href="#">Sơ đồ trang</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Lên đầu trang"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/backToTop.js"></script>
+<script src="/js/service-detail.js"></script>
+
+</body>
+</html>

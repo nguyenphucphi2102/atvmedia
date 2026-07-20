@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lĩnh vực hoạt động - ATVMEDIA</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <!-- Google Font: Be Vietnam Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/fields.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+
+</head>
+
+<body>
+
+  <!-- ===== TOP UTILITY BAR ===== -->
+  <div class="topbar d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center py-2">
+      <div>
+        <a href="tel:19001234"><i class="bi bi-telephone-fill me-1"></i>1900 1234</a>
+        <span class="divider"></span>
+        <a href="mailto:info@atvmedia.vn"><i class="bi bi-envelope-fill me-1"></i>info@atvmedia.vn</a>
+        <span class="divider"></span>
+        <span><i class="bi bi-geo-alt-fill me-1"></i>Hà Nội - Đà Nẵng - TP.HCM</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <span class="me-1">Kết nối:</span>
+        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
+        <a href="#" class="social-link"><i class="bi bi-zalo"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MAIN HEADER ===== -->
+  <header class="main-header sticky-top" id="mainHeader">
+    <nav class="navbar navbar-expand-lg py-2">
+      <div class="container">
+
+       <a class="navbar-brand" href="#">
+        <img src="/images/logo.png" alt="ATVMEDIA" class="brand-logo">
+        <div class="brand-text">
+          <div class="name">ATVMEDIA</div>
+          <div class="tag">Chuyển đổi số doanh nghiệp</div>
+        </div>
+      </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" style="box-shadow:none;">
+          <i class="bi bi-list" style="font-size:2rem; color:var(--teal-700);"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav main-nav mx-lg-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Giới thiệu</a>
+            </li>
+
+            <!-- MEGA MENU: LĨNH VỰC -->
+            <li class="nav-item has-mega" id="megaItem">
+              <a class="nav-link dropdown-toggle active" href="fields.html" id="megaToggle">Lĩnh vực</a>
+              <div class="mega-panel">
+                <div class="mega-title">Giải pháp theo lĩnh vực</div>
+                <div class="mega-grid">
+                  <a href="#f01" class="mega-item"><span class="ic"><i class="bi bi-building"></i></span><span>Dịch vụ
+                      Thành lập Công ty</span></a>
+                  <a href="#f02" class="mega-item"><span class="ic"><i
+                        class="bi bi-file-earmark-lock2"></i></span><span>Đại lý Chữ ký số &amp; Hoá đơn Điện
+                      tử</span></a>
+                  <a href="#f03" class="mega-item"><span class="ic"><i class="bi bi-code-slash"></i></span><span>Thiết
+                      kế Phần mềm &amp; Website</span></a>
+                  <a href="#f04" class="mega-item"><span class="ic"><i class="bi bi-printer"></i></span><span>Thiết kế -
+                      In ấn Các loại</span></a>
+                  <a href="#f06" class="mega-item"><span class="ic"><i class="bi bi-houses"></i></span><span>Trang Đăng
+                      tin Bất động sản</span></a>
+                  <a href="#f07" class="mega-item"><span class="ic"><i class="bi bi-journal-check"></i></span><span>Dịch
+                      vụ Đăng ký Bộ Công Thương</span></a>
+                  <a href="#f08" class="mega-item"><span class="ic"><i class="bi bi-megaphone"></i></span><span>Trang
+                      Đăng Quảng bá Thương hiệu</span></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#">Hệ thống ATVMedia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+          </ul>
+
+          <a href="#" class="btn btn-cta ms-lg-3"><i class="bi bi-headset"></i>Liên hệ ngay</a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= PAGE HERO ================= -->
+  <section class="page-hero">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="container">
+      <div class="breadcrumb-row">
+        <a href="home.html">Trang chủ</a>
+        <i class="bi bi-chevron-right" style="font-size:.65rem;"></i>
+        <span style="color:#fff;">Lĩnh vực</span>
+      </div>
+      <h1>7 lĩnh vực dịch vụ giúp doanh nghiệp vận hành tối ưu</h1>
+      <p class="lead">Từ thủ tục pháp lý, chữ ký số đến thiết kế website, bán lẻ và vận tải — ATVMEDIA cung cấp giải
+        pháp trọn gói theo từng lĩnh vực, đồng hành cùng doanh nghiệp trên hành trình chuyển đổi số.</p>
+    </div>
+  </section>
+
+  <!-- Quick jump pills -->
+  <div class="field-jumplinks">
+    <div class="container">
+      <div class="inner reveal">
+        <a href="#f01" class="jump-pill"><span class="num">01</span>Thành lập Công ty</a>
+        <a href="#f02" class="jump-pill"><span class="num">02</span>Chữ ký số &amp; HĐĐT</a>
+        <a href="#f03" class="jump-pill"><span class="num">03</span>Phần mềm &amp; Website</a>
+        <a href="#f04" class="jump-pill"><span class="num">04</span>Thiết kế - In ấn</a>
+        <a href="#f06" class="jump-pill"><span class="num">06</span>Bất động sản</a>
+        <a href="#f07" class="jump-pill"><span class="num">07</span>Bộ Công Thương</a>
+        <a href="#f08" class="jump-pill"><span class="num">08</span>Quảng bá Thương hiệu</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= INTRO ================= -->
+  <section class="sec-intro">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7 reveal">
+          <div class="eyebrow">Tổng quan</div>
+          <h2> Lĩnh vực chuyên sâu</h2>
+          <p>Mỗi lĩnh vực được ATVMEDIA xây dựng thành quy trình riêng biệt, có đội ngũ chuyên môn và công cụ vận hành
+            đi kèm, giúp doanh nghiệp không phải làm việc với nhiều nhà cung cấp rời rạc.</p>
+          <div class="intro-stats">
+            <div class="stat"><b>7</b><span>Lĩnh vực dịch vụ</span></div>
+            <div class="stat"><b>1.200+</b><span>Doanh nghiệp tin dùng</span></div>
+            <div class="stat"><b>24/7</b><span>Hỗ trợ kỹ thuật</span></div>
+          </div>
+        </div>
+        <div class="col-lg-5 reveal">
+          <div class="intro-grid">
+            <a href="#f01" class="ig-item" title="Thành lập Công ty"><i class="bi bi-building"></i></a>
+            <a href="#f02" class="ig-item" title="Chữ ký số &amp; HĐĐT"><i class="bi bi-file-earmark-lock2"></i></a>
+            <a href="#f03" class="ig-item" title="Phần mềm &amp; Website"><i class="bi bi-code-slash"></i></a>
+            <a href="#f04" class="ig-item" title="Thiết kế - In ấn"><i class="bi bi-printer"></i></a>
+            <div class="ig-item ig-center"><b>7</b><span>lĩnh vực</span></div>
+            <a href="#f06" class="ig-item" title="Bất động sản"><i class="bi bi-houses"></i></a>
+            <a href="#f07" class="ig-item" title="Bộ Công Thương"><i class="bi bi-journal-check"></i></a>
+            <a href="#f08" class="ig-item" title="Quảng bá Thương hiệu"><i class="bi bi-megaphone"></i></a>
+          </div>
+          <div class="intro-grid-caption">
+            <i class="bi bi-truck"></i>
+            <span> xem đầy đủ 7 lĩnh vực bên dưới</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 01. THÀNH LẬP CÔNG TY ================= -->
+  <div class="field-row" id="f01">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-5 reveal">
+          <div class="field-visual">
+            <span class="code-tag">01 / 09</span>
+            <i class="bi bi-building big-ic"></i>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal field-content">
+          <span class="code">Pháp lý doanh nghiệp</span>
+          <h3>Dịch vụ Thành lập Công ty</h3>
+          <p>Hỗ trợ trọn gói thủ tục đăng ký kinh doanh, từ soạn hồ sơ, nộp Sở Kế hoạch &amp; Đầu tư đến khắc dấu và
+            công bố thông tin, giúp doanh nghiệp mới đi vào hoạt động nhanh chóng, đúng quy định.</p>
+          <ul class="field-benefits">
+            <li><i class="bi bi-check-circle-fill"></i>Soạn thảo và nộp hồ sơ thành lập trong 3-5 ngày làm việc</li>
+            <li><i class="bi bi-check-circle-fill"></i>Tư vấn loại hình doanh nghiệp, ngành nghề và vốn điều lệ phù hợp
+            </li>
+            <li><i class="bi bi-check-circle-fill"></i>Hỗ trợ khắc dấu, mở tài khoản ngân hàng, đăng ký thuế ban đầu
+            </li>
+          </ul>
+         <a href="dich-vu-thanh-lap-cong-ty.html" class="field-link">Tìm hiểu thêm <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 02. CHỮ KÝ SỐ & HÓA ĐƠN ĐIỆN TỬ ================= -->
+  <div class="field-row" id="f02">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7 order-lg-1 reveal field-content">
+          <span class="code">Chứng thực điện tử</span>
+          <h3>Đại lý Chữ ký số &amp; Hoá đơn Điện tử</h3>
+          <p>Cung cấp và triển khai giải pháp chữ ký số, hoá đơn điện tử hợp chuẩn cho doanh nghiệp mọi quy mô, kết nối
+            trực tiếp với cơ quan thuế và đảm bảo giá trị pháp lý cho từng giao dịch.</p>
+          <ul class="field-benefits">
+            <li><i class="bi bi-check-circle-fill"></i>Cấp chữ ký số USB Token và chữ ký số từ xa (Remote Signing)</li>
+            <li><i class="bi bi-check-circle-fill"></i>Triển khai hoá đơn điện tử theo Thông tư, đồng bộ với cơ quan
+              thuế</li>
+            <li><i class="bi bi-check-circle-fill"></i>Hỗ trợ kỹ thuật xử lý sự cố xuất hoá đơn trong ngày</li>
+          </ul>
+          <a href="#" class="field-link">Tìm hiểu thêm <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="col-lg-5 order-lg-2 reveal">
+          <div class="field-visual">
+            <span class="code-tag">02 / 09</span>
+            <i class="bi bi-file-earmark-lock2 big-ic"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 03. PHẦN MỀM & WEBSITE ================= -->
+  <div class="field-row" id="f03">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-5 reveal">
+          <div class="field-visual">
+            <span class="code-tag">03 / 09</span>
+            <i class="bi bi-code-slash big-ic"></i>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal field-content">
+          <span class="code">Công nghệ</span>
+          <h3>Thiết kế Phần mềm &amp; Website</h3>
+          <p>Xây dựng website, phần mềm quản lý và ứng dụng theo yêu cầu riêng, tối ưu trải nghiệm người dùng và khả
+            năng mở rộng, phù hợp cho cả doanh nghiệp nhỏ lẫn tập đoàn.</p>
+          <ul class="field-benefits">
+            <li><i class="bi bi-check-circle-fill"></i>Thiết kế website giới thiệu, thương mại điện tử, chuẩn SEO</li>
+            <li><i class="bi bi-check-circle-fill"></i>Phát triển phần mềm quản lý nội bộ, CRM, ERP theo đặc thù</li>
+            <li><i class="bi bi-check-circle-fill"></i>Bảo trì, nâng cấp và bảo mật hệ thống dài hạn</li>
+          </ul>
+          <a href="#" class="field-link">Tìm hiểu thêm <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 04. THIẾT KẾ - IN ẤN ================= -->
+  <div class="field-row" id="f04">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7 order-lg-1 reveal field-content">
+          <span class="code">Nhận diện thương hiệu</span>
+          <h3>Thiết kế - In ấn Các loại</h3>
+          <p>Thiết kế bộ nhận diện thương hiệu, ấn phẩm marketing và in ấn theo yêu cầu, từ logo, catalogue đến biển
+            hiệu, bao bì — đảm bảo tính đồng bộ trên mọi ấn phẩm doanh nghiệp.</p>
+          <ul class="field-benefits">
+            <li><i class="bi bi-check-circle-fill"></i>Thiết kế logo, bộ nhận diện thương hiệu (brand guideline)</li>
+            <li><i class="bi bi-check-circle-fill"></i>In ấn catalogue, name card, tem nhãn, bao bì sản phẩm</li>
+            <li><i class="bi bi-check-circle-fill"></i>Thi công biển hiệu, standee, ấn phẩm sự kiện</li>
+          </ul>
+          <a href="#" class="field-link">Tìm hiểu thêm <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="col-lg-5 order-lg-2 reveal">
+          <div class="field-visual">
+            <span class="code-tag">04 / 09</span>
+            <i class="bi bi-printer big-ic"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ================= 06. BẤT ĐỘNG SẢN ================= -->
+  <div class="field-row" id="f06">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7 order-lg-1 reveal field-content">
+          <span class="code">Bất động sản</span>
+          <h3>Trang Đăng tin Bất động sản</h3>
+          <p>Cung cấp nền tảng đăng tin, quảng bá và quản lý dự án bất động sản, kết nối chủ đầu tư, môi giới và khách
+            hàng trên cùng một hệ thống minh bạch.</p>
+          <ul class="field-benefits">
+            <li><i class="bi bi-check-circle-fill"></i>Đăng tin dự án, sản phẩm với đầy đủ thông tin pháp lý</li>
+            <li><i class="bi bi-check-circle-fill"></i>Quản lý dữ liệu khách hàng tiềm năng và lịch hẹn xem nhà</li>
+            <li><i class="bi bi-check-circle-fill"></i>Hỗ trợ quảng bá tin đăng trên nhiều kênh truyền thông</li>
+          </ul>
+          <a href="#" class="field-link">Tìm hiểu thêm <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="col-lg-5 order-lg-2 reveal">
+          <div class="field-visual">
+            <span class="code-tag">06 / 09</span>
+            <i class="bi bi-houses big-ic"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 07. BỘ CÔNG THƯƠNG ================= -->
+  <div class="field-row" id="f07">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-5 reveal">
+          <div class="field-visual">
+            <span class="code-tag">07 / 09</span>
+            <i class="bi bi-journal-check big-ic"></i>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal field-content">
+          <span class="code">Tuân thủ pháp lý</span>
+          <h3>Dịch vụ Đăng ký Bộ Công Thương</h3>
+          <p>Hỗ trợ doanh nghiệp hoàn tất thủ tục thông báo, đăng ký website/ứng dụng thương mại điện tử với Bộ Công
+            Thương, đảm bảo hoạt động kinh doanh trực tuyến hợp lệ.</p>
+          <ul class="field-benefits">
+            <li><i class="bi bi-check-circle-fill"></i>Tư vấn hồ sơ thông báo/đăng ký website TMĐT</li>
+            <li><i class="bi bi-check-circle-fill"></i>Theo dõi, cập nhật trạng thái hồ sơ trên Cổng thông tin</li>
+            <li><i class="bi bi-check-circle-fill"></i>Hỗ trợ điều chỉnh, gia hạn khi có thay đổi thông tin</li>
+          </ul>
+          <a href="#" class="field-link">Tìm hiểu thêm <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 08. QUẢNG BÁ THƯƠNG HIỆU ================= -->
+  <div class="field-row" id="f08">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7 order-lg-1 reveal field-content">
+          <span class="code">Truyền thông</span>
+          <h3>Trang Đăng Quảng bá Thương hiệu</h3>
+          <p>Xây dựng và lan toả hình ảnh thương hiệu qua các kênh truyền thông số, giúp doanh nghiệp tiếp cận đúng
+            khách hàng mục tiêu và gia tăng độ nhận diện.</p>
+          <ul class="field-benefits">
+            <li><i class="bi bi-check-circle-fill"></i>Đăng bài PR, giới thiệu doanh nghiệp trên các nền tảng đối tác
+            </li>
+            <li><i class="bi bi-check-circle-fill"></i>Xây dựng nội dung quảng bá theo từng giai đoạn kinh doanh</li>
+            <li><i class="bi bi-check-circle-fill"></i>Theo dõi hiệu quả truyền thông và đề xuất tối ưu</li>
+          </ul>
+          <a href="#" class="field-link">Tìm hiểu thêm <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="col-lg-5 order-lg-2 reveal">
+          <div class="field-visual">
+            <span class="code-tag">08 / 09</span>
+            <i class="bi bi-megaphone big-ic"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CTA CUỐI TRANG ============ -->
+  <section class="sec-cta">
+    <div class="container reveal">
+      <h2>Chưa chắc lĩnh vực nào phù hợp với doanh nghiệp bạn?</h2>
+      <p>Để lại thông tin, đội ngũ tư vấn ATVMEDIA sẽ liên hệ trong vòng 24h để đề xuất giải pháp phù hợp nhất theo đúng
+        nhu cầu và ngành nghề của bạn.</p>
+      <a href="#" class="btn-cta-solid"><i class="bi bi-telephone-outbound me-2"></i>Nhận tư vấn miễn phí</a>
+      <a href="#" class="btn-cta-ghost">Xem bảng giá dịch vụ</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="newsletter-box d-md-flex justify-content-between align-items-center">
+            <div class="mb-3 mb-md-0">
+              <h5><i class="bi bi-envelope-paper me-2"></i>Đăng ký nhận bản tin</h5>
+              <p class="mb-0">Cập nhật giải pháp chuyển đổi số, ưu đãi mới nhất từ ATVMEDIA.</p>
+            </div>
+            <form class="newsletter-form d-flex" style="min-width:320px;" onsubmit="return false;">
+              <input type="email" class="form-control" placeholder="Nhập email của bạn" required>
+              <button class="btn btn-send" type="submit">Đăng ký</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gy-4">
+
+        <div class="col-12 col-md-6 col-lg-3">
+           <div class="footer-brand">
+          <img src="/images/logo.png" alt="ATVMEDIA" class="brand-logo">
+          <div>
+            <div class="name">ATVMEDIA</div>
+            <div class="tag">Chuyển đổi số doanh nghiệp</div>
+          </div>
+        </div>
+          </div>
+          <p class="footer-about-text">
+            Hệ sinh thái chuyển đổi số được phát triển với nhiều giá trị. Tư vấn và triển khai giải pháp chuyên sâu giúp
+            doanh nghiệp vận hành tối ưu, loại bỏ thủ tục rườm rà.
+          </p>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-3">
+          <h6 class="f-title">Lĩnh vực</h6>
+          <ul class="footer-links">
+            <li><a href="#f01"><i class="bi bi-caret-right-fill"></i>Thành lập Công ty</a></li>
+            <li><a href="#f02"><i class="bi bi-caret-right-fill"></i>Chữ ký số &amp; Hoá đơn ĐT</a></li>
+            <li><a href="#f03"><i class="bi bi-caret-right-fill"></i>Thiết kế Phần mềm - Website</a></li>
+            <li><a href="#f04"><i class="bi bi-caret-right-fill"></i>Thiết kế - In ấn</a></li>
+            <li><a href="#f06"><i class="bi bi-caret-right-fill"></i>Đăng tin Bất động sản</a></li>
+            <li><a href="#f07"><i class="bi bi-caret-right-fill"></i>Đăng ký Bộ Công Thương</a></li>
+            <li><a href="#f08"><i class="bi bi-caret-right-fill"></i>Quảng bá Thương hiệu</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="f-title">Liên kết nhanh</h6>
+          <ul class="footer-links">
+            <li><a href="home.html"><i class="bi bi-caret-right-fill"></i>Trang chủ</a></li>
+            <li><a href="about.html"><i class="bi bi-caret-right-fill"></i>Giới thiệu</a></li>
+            <li><a href="#"><i class="bi bi-caret-right-fill"></i>Hệ thống ATVMedia</a></li>
+            <li><a href="#"><i class="bi bi-caret-right-fill"></i>Tin tức</a></li>
+            <li><a href="#"><i class="bi bi-caret-right-fill"></i>Tuyển dụng</a></li>
+            <li><a href="#"><i class="bi bi-caret-right-fill"></i>Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <h6 class="f-title">Thông tin liên hệ</h6>
+          <ul class="footer-links footer-contact">
+            <li>
+              <span class="ic"><i class="bi bi-geo-alt-fill"></i></span>
+              <span>26 Nguyễn Duy, Phường Cẩm Lệ, TP Đà Nẵng, Việt Nam</span>
+            </li>
+            <li>
+              <span class="ic"><i class="bi bi-telephone-fill"></i></span>
+              <span>1900 1234 (giờ hành chính: 8:00 - 17:30, T2 - T7)</span>
+            </li>
+            <li>
+              <span class="ic"><i class="bi bi-envelope-fill"></i></span>
+              <span>info@atvmedia.vn</span>
+            </li>
+            <li>
+              <span class="ic"><i class="bi bi-globe2"></i></span>
+              <span>www.atvmedia.vn</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom d-md-flex justify-content-between align-items-center">
+        <div>© 2026 ATVMEDIA.</div>
+        <div class="text-md-end">
+          <a href="#">Chính sách bảo mật</a>
+          <a href="#">Điều khoản sử dụng</a>
+          <a href="#">Sơ đồ trang</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Lên đầu trang"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) backToTop.classList.add('show');
+      else backToTop.classList.remove('show');
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => io.observe(el));
+  </script>
+
+</body>
+
+</html>
