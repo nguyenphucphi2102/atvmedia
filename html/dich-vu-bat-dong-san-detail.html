@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thiết kế - In ấn Các loại - ATVMEDIA</title>
+<title>Chi tiết Dịch vụ Đăng tin Bất động sản - ATVMEDIA</title>
 
 <!-- Bootstrap 5 -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/header.css">
 <link rel="stylesheet" href="/css/footer.css">
-<link rel="stylesheet" href="/css/service.css">
+<link rel="stylesheet" href="/css/service.css"> <!-- Có thể dùng chung hoặc tạo service-detail.css nếu có -->
 
 </head>
 <body>
@@ -34,7 +34,7 @@
       <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
       <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
       <a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
-      <a href="#" class="social-link"><i class="bi bi-zalo"></i>Za</a>
+      <a href="#" class="social-link"><i class="bi bi-zalo"></i></a>
     </div>
   </div>
 </div>
@@ -69,7 +69,7 @@
 
           <!-- MEGA MENU: LĨNH VỰC -->
           <li class="nav-item has-mega" id="megaItem">
-            <a class="nav-link dropdown-toggle" href="fields.html" id="megaToggle">Lĩnh vực</a>
+            <a class="nav-link dropdown-toggle active" href="fields.html" id="megaToggle">Lĩnh vực</a>
             <div class="mega-panel">
               <div class="mega-title">Giải pháp theo lĩnh vực</div>
               <div class="mega-grid">
@@ -77,7 +77,7 @@
                 <a href="dich-vu-chu-ky-so.html" class="mega-item"><span class="ic"><i class="bi bi-file-earmark-lock2"></i></span><span>Đại lý Chữ ký số &amp; Hoá đơn Điện tử</span></a>
                 <a href="thiet-ke-website.html" class="mega-item"><span class="ic"><i class="bi bi-code-slash"></i></span><span>Thiết kế Phần mềm &amp; Website</span></a>
                 <a href="thiet-ke-in-an.html" class="mega-item"><span class="ic"><i class="bi bi-printer"></i></span><span>Thiết kế - In ấn Các loại</span></a>
-                <a href="dich-vu-bat-dong-san.html" class="mega-item"><span class="ic"><i class="bi bi-houses"></i></span><span>Trang Đăng tin Bất động sản</span></a>
+                <a href="dich-vu-bat-dong-san.html" class="mega-item active"><span class="ic"><i class="bi bi-houses"></i></span><span>Trang Đăng tin Bất động sản</span></a>
                 <a href="dich-vu-bo-cong-thuong.html" class="mega-item"><span class="ic"><i class="bi bi-journal-check"></i></span><span>Dịch vụ Đăng ký Bộ Công Thương</span></a>
                 <a href="dich-vu-quang-ba-thuong-hieu.html" class="mega-item"><span class="ic"><i class="bi bi-megaphone"></i></span><span>Trang Đăng Quảng bá Thương hiệu</span></a>
               </div>
@@ -102,92 +102,66 @@
   </nav>
 </header>
 
-<!-- ================= DANH SÁCH DỊCH VỤ ================= -->
-<section class="services-section">
+<!-- ================= NỘI DUNG CHI TIẾT DỊCH VỤ ================= -->
+<section class="services-section py-5">
     <div class="container">
         
-        <!-- Tiêu đề và Breadcrumb -->
-        <h1 class="services-title">THIẾT KẾ - IN ẤN CÁC LOẠI</h1>
-        <div class="custom-breadcrumb">
-            <a href="home.html">Trang chủ</a> <span>/</span> Thiết kế - In ấn các loại
+        <!-- Breadcrumb -->
+        <div class="custom-breadcrumb mb-3">
+            <a href="home.html">Trang chủ</a> <span>/</span> <a href="dich-vu-bat-dong-san.html">Trang Đăng tin Bất động sản</a> <span>/</span> Chi tiết dịch vụ
         </div>
 
-        <!-- Lưới Danh sách dịch vụ (Sử dụng Bootstrap Grid) -->
-        <div class="row g-4">
-            
-            <!-- Card 1 -->
-            <div class="col-lg-4 col-md-6">
-                <a href="thiet-ke-in-an-detail.html" class="service-card">
-                    <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800&auto=format&fit=crop" alt="Thiết kế Logo & Bộ nhận diện thương hiệu">
-                    </div>
-                    <div class="card-body">
-                        <h2 class="card-title">THIẾT KẾ LOGO &amp; BỘ NHẬN DIỆN THƯƠNG HIỆU</h2>
-                    </div>
-                </a>
+        <div class="row g-5">
+            <!-- Cột nội dung chính -->
+            <div class="col-lg-8">
+                <h1 class="services-title mb-4" style="font-size: 2rem;">THIẾT KẾ WEB SÀN GIAO DỊCH BẤT ĐỘNG SẢN &amp; HỆ THỐNG QUẢN LÝ TIN ĐĂNG</h1>
+                
+                <div class="mb-4">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop" class="img-fluid rounded shadow-sm w-100" alt="Thiết kế web sàn giao dịch BĐS">
+                </div>
+
+                <div class="content-detail text-secondary" style="line-height: 1.8;">
+                    <h3 class="text-dark fw-bold mb-3">1. Tổng quan về giải pháp website Bất động sản tại ATVMEDIA</h3>
+                    <p>Trong thời đại số hóa, một website đăng tin và sàn giao dịch bất động sản chuyên nghiệp là công cụ cốt lõi giúp các doanh nghiệp, sàn môi giới tiếp cận hàng triệu khách hàng tiềm năng. ATVMEDIA cung cấp giải pháp trọn gói từ thiết kế giao diện chuẩn UX/UI, tốc độ tải trang cực nhanh đến tích hợp các công cụ quản lý tin đăng thông minh.</p>
+
+                    <h3 class="text-dark fw-bold mt-4 mb-3">2. Các tính năng nổi bật của hệ thống</h3>
+                    <ul class="list-unstyled ps-3">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Hệ thống đăng tin phân cấp:</strong> Cho phép thành viên, môi giới tự đăng tin, duyệt tin tự động hoặc kiểm duyệt thủ công.</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Tìm kiếm nâng cao &amp; Bộ lọc thông minh:</strong> Lọc theo khu vực, khoảng giá, diện tích, hướng nhà, dự án,...</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Tích hợp bản đồ quy hoạch (GIS):</strong> Hỗ trợ khách hàng định vị trí trực quan trên nền tảng bản đồ số.</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Quản lý tài chính &amp; Nạp tiền đẩy tin:</strong> Tích hợp cổng thanh toán trực tuyến, ví điện tử để mua tin VIP, đẩy top tự động.</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Tích hợp CRM quản lý khách hàng:</strong> Lưu trữ thông tin khách hàng tiềm năng (Lead) từ các form liên hệ đổ về.</li>
+                    </ul>
+
+                    <h3 class="text-dark fw-bold mt-4 mb-3">3. Tại sao nên chọn dịch vụ của ATVMEDIA?</h3>
+                    <p>Với kinh nghiệm thực chiến trong lĩnh vực chuyển đổi số doanh nghiệp, chúng tôi cam kết xây dựng hệ thống vận hành ổn định, bảo mật cao, tối ưu chuẩn SEO Google giúp website của bạn nhanh chóng đạt thứ hạng cao trên công cụ tìm kiếm.</p>
+                </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="col-lg-4 col-md-6">
-                <a href="thiet-ke-in-an-detail.html" class="service-card">
-                    <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop" alt="In ấn Catalogue & Brochure Doanh nghiệp">
-                    </div>
-                    <div class="card-body">
-                        <h2 class="card-title">IN ẤN CATALOGUE &amp; BROCHURE DOANH NGHIỆP</h2>
-                    </div>
-                </a>
+            <!-- Cột Sidebar bên phải -->
+            <div class="col-lg-4">
+                <div class="p-4 rounded shadow-sm bg-light border">
+                    <h4 class="fw-bold text-dark mb-3">Tư vấn giải pháp</h4>
+                    <p class="text-muted small">Để lại thông tin để chuyên gia của ATVMEDIA liên hệ tư vấn chi tiết giải pháp phù hợp với mô hình doanh nghiệp của bạn.</p>
+                    <form onsubmit="return false;">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Họ và tên của bạn" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Số điện thoại liên hệ" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Địa chỉ Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Yêu cầu cần tư vấn..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold" style="background-color: var(--teal-700, #0d9488); border: none;">Gửi yêu cầu tư vấn</button>
+                    </form>
+                </div>
             </div>
-
-            <!-- Card 3 -->
-            <div class="col-lg-4 col-md-6">
-                <a href="thiet-ke-in-an-detail.html" class="service-card">
-                    <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=800&auto=format&fit=crop" alt="Thiết kế Name Card - Card visit">
-                    </div>
-                    <div class="card-body">
-                        <h2 class="card-title">THIẾT KẾ NAME CARD - CARD VISIT</h2>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="col-lg-4 col-md-6">
-                <a href="thiet-ke-in-an-detail.html" class="service-card">
-                    <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?q=80&w=800&auto=format&fit=crop" alt="Thiết kế & In ấn Bao bì, Tem nhãn">
-                    </div>
-                    <div class="card-body">
-                        <h2 class="card-title">THIẾT KẾ &amp; IN ẤN BAO BÌ, TEM NHÃN</h2>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="col-lg-4 col-md-6">
-                <a href="thiet-ke-in-an-detail.html" class="service-card">
-                    <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop" alt="Thi công Biển hiệu, Standee Quảng cáo">
-                    </div>
-                    <div class="card-body">
-                        <h2 class="card-title">THI CÔNG BIỂN HIỆU, STANDEE QUẢNG CÁO</h2>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="col-lg-4 col-md-6">
-                <a href="thiet-ke-in-an-detail.html" class="service-card">
-                    <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800&auto=format&fit=crop" alt="In ấn Ấn phẩm Sự kiện, Hội nghị">
-                    </div>
-                    <div class="card-body">
-                        <h2 class="card-title">IN ẤN ẤN PHẨM SỰ KIỆN, HỘI NGHỊ</h2>
-                    </div>
-                </a>
-            </div>
-
         </div>
+
     </div>
 </section>
 
@@ -239,9 +213,9 @@
         <h6 class="f-title">Lĩnh vực</h6>
         <ul class="footer-links">
           <li><a href="dich-vu-thanh-lap-cong-ty.html"><i class="bi bi-caret-right-fill"></i>Thành lập Công ty</a></li>
-          <li><a href="thiet-ke-website.html"><i class="bi bi-caret-right-fill"></i>Thiết kế Phần mềm - Website</a></li>
+          <li><a href="dich-vu-chu-ky-so.html"><i class="bi bi-caret-right-fill"></i>Chữ ký số &amp; Hoá đơn ĐT</a></li>
+          <li><a href="dich-vu-bat-dong-san.html"><i class="bi bi-caret-right-fill"></i>Đăng tin Bất động sản</a></li>
           <li><a href="thiet-ke-in-an.html"><i class="bi bi-caret-right-fill"></i>Thiết kế - In ấn</a></li>
-          <li><a href="#"><i class="bi bi-caret-right-fill"></i>Đăng tin Bất động sản</a></li>
           <li><a href="#"><i class="bi bi-caret-right-fill"></i>Đăng ký Bộ Công Thương</a></li>
           <li><a href="#"><i class="bi bi-caret-right-fill"></i>Quảng bá Thương hiệu</a></li>
         </ul>
