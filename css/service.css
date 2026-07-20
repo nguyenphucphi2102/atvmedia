@@ -1,0 +1,94 @@
+/* =========================================
+   STYLE CHO TRANG DỊCH VỤ THÀNH LẬP CÔNG TY
+   ========================================= */
+.services-section {
+  padding: 50px 0 80px;
+  background-color: #fff;
+}
+
+.services-title {
+  color: #e62020; /* Màu đỏ giống trong hình */
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.custom-breadcrumb {
+  text-align: center;
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.custom-breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.custom-breadcrumb a:hover {
+  color: #e62020;
+}
+
+.custom-breadcrumb span {
+  margin: 0 8px;
+  color: #ccc;
+}
+
+/* Card Dịch Vụ */
+.service-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  text-decoration: none;
+  display: block;
+}
+
+.service-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.service-card .img-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Tỉ lệ khung hình giống trong ảnh */
+  overflow: hidden;
+}
+
+.service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.03); /* Hiệu ứng zoom nhẹ ảnh khi di chuột */
+}
+
+.service-card .card-body {
+  padding: 20px 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px; /* Đảm bảo các thẻ có độ cao chữ đồng đều */
+}
+
+.service-card .card-title {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.service-card:hover .card-title {
+  color: #e62020; /* Đổi màu chữ khi di chuột */
+}

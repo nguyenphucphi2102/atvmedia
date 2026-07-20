@@ -7,13 +7,7 @@
   "use strict";
 
   /* 1) Hiệu ứng gõ chữ (typewriter) trong tiêu đề Banner */
-  const words = [
-    "Thành lập công ty",
-    "Chữ ký số & Hoá đơn ĐT",
-    "Thiết kế Website",
-    "Bán lẻ & TMĐT",
-    "Vận tải - Kho bãi",
-  ];
+  const words = ["Thành lập công ty", "Thiết kế Website", "Bán lẻ & TMĐT"];
   const rotateEl = document.getElementById("rotateText");
   let wIndex = 0,
     chIndex = 0,
