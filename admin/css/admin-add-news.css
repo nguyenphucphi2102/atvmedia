@@ -4,6 +4,8 @@
   --admin-sidebar-hover: #334155;
   --admin-text-color: #cbd5e1;
   --admin-topbar-height: 65px;
+  --teal-700: #0d9488;
+  --teal-800: #0f766e;
 }
 
 body {
@@ -61,7 +63,7 @@ body {
 .sidebar-menu .nav-link.active {
   color: #fff;
   background-color: var(--admin-sidebar-hover);
-  border-left: 4px solid #285b5c;
+  border-left: 4px solid var(--teal-700);
 }
 
 .sidebar-menu .nav-link i.icon-main {
@@ -130,13 +132,10 @@ body {
   flex-grow: 1;
 }
 
-.table-categories th {
+/* Custom styling for form elements */
+.label-teal {
+  color: var(--teal-800);
   font-weight: 600;
-  background-color: #f8fafc;
-  color: #334155;
-}
-.table-categories td {
-  vertical-align: middle;
 }
 
 @media (max-width: 991.98px) {

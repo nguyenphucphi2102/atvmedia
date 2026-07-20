@@ -61,7 +61,7 @@ body {
 .sidebar-menu .nav-link.active {
   color: #fff;
   background-color: var(--admin-sidebar-hover);
-  border-left: 4px solid #3b82f6;
+  border-left: 4px solid #285b5c;
 }
 
 .sidebar-menu .nav-link i.icon-main {

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trang Đăng tin Bất động sản - ATVMEDIA</title>
+<title>Tin tức &amp; Sự kiện - ATVMEDIA</title>
 
 <!-- Bootstrap 5 -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
@@ -12,10 +12,11 @@
 <!-- Google Font: Be Vietnam Pro -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- CSS Riêng -->
+<link rel="stylesheet" href="/css/news.css">
 <link rel="stylesheet" href="/css/header.css">
 <link rel="stylesheet" href="/css/footer.css">
-<link rel="stylesheet" href="/css/service.css">
-
 </head>
 <body>
 
@@ -23,18 +24,18 @@
 <div class="topbar d-none d-md-block">
   <div class="container d-flex justify-content-between align-items-center py-2">
     <div>
-      <a href="tel:19001234"><i class="bi bi-telephone-fill me-1"></i>1900 1234</a>
+      <a href="tel:19001234"><i class="bi bi-telephone-fill me-1"></i>1234 567890</a>
       <span class="divider"></span>
-      <a href="mailto:info@atvmedia.vn"><i class="bi bi-envelope-fill me-1"></i>info@atvmedia.vn</a>
+      <a href="mailto:info@atvmedia.vn"><i class="bi bi-envelope-fill me-1"></i>atvmedia.vn</a>
       <span class="divider"></span>
-      <span><i class="bi bi-geo-alt-fill me-1"></i>Hà Nội - Đà Nẵng - TP.HCM</span>
+      <span><i class="bi bi-geo-alt-fill me-1"></i>Đà Nẵng</span>
     </div>
     <div class="d-flex align-items-center">
       <span class="me-1">Kết nối:</span>
       <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
       <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
       <a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
-      <a href="#" class="social-link"><i class="bi bi-zalo"></i></a>
+      <a href="#" class="social-link"><i class="bi bi-zalo"></i>Za</a>
     </div>
   </div>
 </div>
@@ -69,7 +70,7 @@
 
           <!-- MEGA MENU: LĨNH VỰC -->
           <li class="nav-item has-mega" id="megaItem">
-            <a class="nav-link dropdown-toggle active" href="fields.html" id="megaToggle">Lĩnh vực</a>
+            <a class="nav-link dropdown-toggle" href="fields.html" id="megaToggle">Lĩnh vực</a>
             <div class="mega-panel">
               <div class="mega-title">Giải pháp theo lĩnh vực</div>
               <div class="mega-grid">
@@ -77,7 +78,7 @@
                 <a href="dich-vu-chu-ky-so.html" class="mega-item"><span class="ic"><i class="bi bi-file-earmark-lock2"></i></span><span>Đại lý Chữ ký số &amp; Hoá đơn Điện tử</span></a>
                 <a href="thiet-ke-website.html" class="mega-item"><span class="ic"><i class="bi bi-code-slash"></i></span><span>Thiết kế Phần mềm &amp; Website</span></a>
                 <a href="thiet-ke-in-an.html" class="mega-item"><span class="ic"><i class="bi bi-printer"></i></span><span>Thiết kế - In ấn Các loại</span></a>
-                <a href="dich-vu-bat-dong-san.html" class="mega-item active"><span class="ic"><i class="bi bi-houses"></i></span><span>Trang Đăng tin Bất động sản</span></a>
+                <a href="dich-vu-bat-dong-san.html" class="mega-item"><span class="ic"><i class="bi bi-houses"></i></span><span>Trang Đăng tin Bất động sản</span></a>
                 <a href="dich-vu-bo-cong-thuong.html" class="mega-item"><span class="ic"><i class="bi bi-journal-check"></i></span><span>Dịch vụ Đăng ký Bộ Công Thương</span></a>
                 <a href="dich-vu-quang-ba-thuong-hieu.html" class="mega-item"><span class="ic"><i class="bi bi-megaphone"></i></span><span>Trang Đăng Quảng bá Thương hiệu</span></a>
               </div>
@@ -88,7 +89,7 @@
             <a class="nav-link" href="#">Hệ thống ATVMedia</a>
           </li>
           <li class="nav-item">
-           <a class="nav-link" href="news.html">Tin tức</a>
+            <a class="nav-link active" href="news.html">Tin tức</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Liên hệ</a>
@@ -102,99 +103,123 @@
   </nav>
 </header>
 
-<!-- ================= DANH SÁCH DỊCH VỤ ================= -->
-<section class="services-section">
+<!-- ================= NỘI DUNG TRANG DANH SÁCH TIN TỨC ================= -->
+<section class="news-section">
     <div class="container">
         
         <!-- Tiêu đề và Breadcrumb -->
-        <h1 class="services-title">TRANG ĐĂNG TIN BẤT ĐỘNG SẢN</h1>
-        <div class="custom-breadcrumb">
-            <a href="home.html">Trang chủ</a> <span>/</span> Trang Đăng tin Bất động sản
+        <h1 class="news-title">TIN TỨC &amp; SỰ KIỆN</h1>
+        <div class="news-breadcrumb">
+            <a href="home.html">Trang chủ</a> <span>/</span> Tin tức
         </div>
 
-        <!-- Lưới Danh sách dịch vụ (Sử dụng Bootstrap Grid) -->
+        <!-- Lưới Danh sách bài viết -->
         <div class="row g-4">
             
-            <!-- Card 1 -->
+            <!-- Bài viết 1 -->
             <div class="col-lg-4 col-md-6">
-                <a href="dich-vu-bat-dong-san-detail.html" class="service-card">
+                <a href="news-detail.html" class="news-card text-decoration-none h-100 d-block">
                     <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop" alt="Thiết kế Website Sàn Môi Giới BĐS">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" alt="Chuyển đổi số doanh nghiệp">
                     </div>
                     <div class="card-body">
-                        <h2 class="card-title">THIẾT KẾ WEB SÀN GIAO DỊCH BẤT ĐỘNG SẢN</h2>
+                        <div class="text-muted small mb-2"><i class="bi bi-calendar3 me-1"></i> 20/07/2026</div>
+                        <h2 class="card-title">Top 5 xu hướng chuyển đổi số doanh nghiệp đột phá trong năm 2026</h2>
+                        <p class="text-secondary small mt-2">Cập nhật các giải pháp công nghệ mới giúp doanh nghiệp tối ưu hóa quy trình vận hành và nâng cao năng lực cạnh tranh...</p>
                     </div>
                 </a>
             </div>
 
-            <!-- Card 2 -->
+            <!-- Bài viết 2 -->
             <div class="col-lg-4 col-md-6">
-                <a href="dich-vu-bat-dong-san-detail.html" class="service-card">
+                <a href="news-detail.html" class="news-card text-decoration-none h-100 d-block">
                     <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop" alt="Hệ thống Quản lý Tin đăng & Khách hàng CRM">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop" alt="Đăng ký Bộ Công Thương">
                     </div>
                     <div class="card-body">
-                        <h2 class="card-title">HỆ THỐNG QUẢN LÝ TIN ĐĂNG &amp; CRM BĐS</h2>
+                        <div class="text-muted small mb-2"><i class="bi bi-calendar3 me-1"></i> 18/07/2026</div>
+                        <h2 class="card-title">Những lưu ý quan trọng khi thông báo website thương mại điện tử</h2>
+                        <p class="text-secondary small mt-2">Tổng hợp các quy định mới nhất từ Bộ Công Thương giúp doanh nghiệp tránh các rủi ro pháp lý khi kinh doanh trực tuyến...</p>
                     </div>
                 </a>
             </div>
 
-            <!-- Card 3 -->
+            <!-- Bài viết 3 -->
             <div class="col-lg-4 col-md-6">
-                <a href="dich-vu-bat-dong-san-detail.html" class="service-card">
+                <a href="news-detail.html" class="news-card text-decoration-none h-100 d-block">
                     <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" alt="Dịch vụ Đẩy tin VIP, Quảng cáo Dự án">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop" alt="Chữ ký số và hóa đơn điện tử">
                     </div>
                     <div class="card-body">
-                        <h2 class="card-title">DỊCH VỤ ĐẨY TIN VIP &amp; QUẢNG CÁO DỰ ÁN</h2>
+                        <div class="text-muted small mb-2"><i class="bi bi-calendar3 me-1"></i> 15/07/2026</div>
+                        <h2 class="card-title">Lợi ích tuyệt vời của việc tích hợp chữ ký số vào hóa đơn điện tử</h2>
+                        <p class="text-secondary small mt-2">Nâng cao tính bảo mật và tiết kiệm thời gian ký duyệt chứng từ kế toán cho doanh nghiệp vừa và nhỏ...</p>
                     </div>
                 </a>
             </div>
 
-            <!-- Card 4 -->
+            <!-- Bài viết 4 -->
             <div class="col-lg-4 col-md-6">
-                <a href="dich-vu-bat-dong-san-detail.html" class="service-card">
+                <a href="news-detail.html" class="news-card text-decoration-none h-100 d-block">
                     <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=800&auto=format&fit=crop" alt="Tích hợp bản đồ Quy hoạch GIS & Định giá">
+                        <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?q=80&w=800&auto=format&fit=crop" alt="Quảng bá thương hiệu">
                     </div>
                     <div class="card-body">
-                        <h2 class="card-title">TÍCH HỢP BẢN ĐỒ QUY HOẠCH &amp; ĐỊNH GIÁ</h2>
+                        <div class="text-muted small mb-2"><i class="bi bi-calendar3 me-1"></i> 12/07/2026</div>
+                        <h2 class="card-title">Chiến lược booking báo chí PR hiệu quả cho thương hiệu mới ra mắt</h2>
+                        <p class="text-secondary small mt-2">Bí quyết lựa chọn đầu báo uy tín và cách xây dựng nội dung thông cáo báo chí thu hút sự quan tâm của độc giả...</p>
                     </div>
                 </a>
             </div>
 
-            <!-- Card 5 -->
+            <!-- Bài viết 5 -->
             <div class="col-lg-4 col-md-6">
-                <a href="dich-vu-bat-dong-san-detail.html" class="service-card">
+                <a href="news-detail.html" class="news-card text-decoration-none h-100 d-block">
                     <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=800&auto=format&fit=crop" alt="Giải pháp Landing Page Dự án BĐS chuyên nghiệp">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Thiết kế website">
                     </div>
                     <div class="card-body">
-                        <h2 class="card-title">LANDING PAGE DỰ ÁN BẤT ĐỘNG SẢN</h2>
+                        <div class="text-muted small mb-2"><i class="bi bi-calendar3 me-1"></i> 10/07/2026</div>
+                        <h2 class="card-title">Tiêu chuẩn thiết kế website chuẩn SEO tăng tỷ lệ chuyển đổi đơn hàng</h2>
+                        <p class="text-secondary small mt-2">Khám phá các yếu tố cấu thành một website chuyên nghiệp, tốc độ tải trang nhanh và thân thiện với bộ máy tìm kiếm...</p>
                     </div>
                 </a>
             </div>
 
-            <!-- Card 6 -->
+            <!-- Bài viết 6 -->
             <div class="col-lg-4 col-md-6">
-                <a href="dich-vu-bat-dong-san-detail.html" class="service-card">
+                <a href="news-detail.html" class="news-card text-decoration-none h-100 d-block">
                     <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=800&auto=format&fit=crop" alt="Truyền thông & Xây dựng thương hiệu Môi giới">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=800&auto=format&fit=crop" alt="Thành lập doanh nghiệp">
                     </div>
                     <div class="card-body">
-                        <h2 class="card-title">TRUYỀN THÔNG &amp; THƯƠNG HIỆU MÔI GIỚI</h2>
+                        <div class="text-muted small mb-2"><i class="bi bi-calendar3 me-1"></i> 05/07/2026</div>
+                        <h2 class="card-title">Tư vấn thủ tục thành lập công ty trọn gói cho người mới bắt đầu khởi nghiệp</h2>
+                        <p class="text-secondary small mt-2">Hướng dẫn chi tiết các bước chuẩn bị hồ sơ, lựa chọn mã ngành nghề và kê khai thuế ban đầu đúng quy định pháp luật...</p>
                     </div>
                 </a>
             </div>
 
         </div>
+
+        <!-- Phân trang (Pagination) -->
+        <nav class="mt-5" aria-label="Page navigation">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"><i class="bi bi-chevron-left"></i></a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+          </ul>
+        </nav>
+
     </div>
 </section>
 
 <!-- ===== FOOTER ===== -->
 <footer class="site-footer">
   <div class="container">
-
+ 
     <!-- Newsletter -->
     <div class="row mb-5">
       <div class="col-12">
@@ -210,10 +235,10 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- Main columns -->
     <div class="row gy-4">
-
+ 
       <!-- Col 1: Brand -->
       <div class="col-12 col-md-6 col-lg-3">
         <div class="footer-brand">
@@ -233,33 +258,33 @@
           <a href="#"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
-
+ 
       <!-- Col 2: Lĩnh vực -->
       <div class="col-6 col-md-3 col-lg-3">
         <h6 class="f-title">Lĩnh vực</h6>
         <ul class="footer-links">
-          <li><a href="dich-vu-thanh-lap-cong-ty.html"><i class="bi bi-caret-right-fill"></i>Thành lập Công ty</a></li>
-          <li><a href="dich-vu-chu-ky-so.html"><i class="bi bi-caret-right-fill"></i>Chữ ký số &amp; Hoá đơn ĐT</a></li>
-          <li><a href="dich-vu-bat-dong-san.html"><i class="bi bi-caret-right-fill"></i>Đăng tin Bất động sản</a></li>
+          <li><a href="#"><i class="bi bi-caret-right-fill"></i>Thành lập Công ty</a></li>
+          <li><a href="#"><i class="bi bi-caret-right-fill"></i>Thiết kế Phần mềm - Website</a></li>
           <li><a href="thiet-ke-in-an.html"><i class="bi bi-caret-right-fill"></i>Thiết kế - In ấn</a></li>
+          <li><a href="#"><i class="bi bi-caret-right-fill"></i>Đăng tin Bất động sản</a></li>
           <li><a href="#"><i class="bi bi-caret-right-fill"></i>Đăng ký Bộ Công Thương</a></li>
           <li><a href="#"><i class="bi bi-caret-right-fill"></i>Quảng bá Thương hiệu</a></li>
         </ul>
       </div>
-
+ 
       <!-- Col 3: Liên kết nhanh -->
       <div class="col-6 col-md-3 col-lg-2">
         <h6 class="f-title">Liên kết nhanh</h6>
         <ul class="footer-links">
-          <li><a href="home.html"><i class="bi bi-caret-right-fill"></i>Trang chủ</a></li>
-          <li><a href="about.html"><i class="bi bi-caret-right-fill"></i>Giới thiệu</a></li>
+          <li><a href="#"><i class="bi bi-caret-right-fill"></i>Trang chủ</a></li>
+          <li><a href="#"><i class="bi bi-caret-right-fill"></i>Giới thiệu</a></li>
           <li><a href="#"><i class="bi bi-caret-right-fill"></i>Hệ thống ATVMedia</a></li>
           <li><a href="#"><i class="bi bi-caret-right-fill"></i>Tin tức</a></li>
           <li><a href="#"><i class="bi bi-caret-right-fill"></i>Tuyển dụng</a></li>
           <li><a href="#"><i class="bi bi-caret-right-fill"></i>Liên hệ</a></li>
         </ul>
       </div>
-
+ 
       <!-- Col 4: Liên hệ -->
       <div class="col-12 col-md-6 col-lg-4">
         <h6 class="f-title">Thông tin liên hệ</h6>
@@ -270,7 +295,7 @@
           </li>
           <li>
             <span class="ic"><i class="bi bi-telephone-fill"></i></span>
-            <span>1900 1234 (giờ hành chính: 8:00 - 17:30, T2 - T7)</span>
+            <span>..... (giờ hành chính: 8:00 - 17:30, T2 - T7)</span>
           </li>
           <li>
             <span class="ic"><i class="bi bi-envelope-fill"></i></span>
@@ -282,9 +307,9 @@
           </li>
         </ul>
       </div>
-
+ 
     </div>
-
+ 
     <!-- Bottom bar -->
     <div class="footer-bottom d-md-flex justify-content-between align-items-center">
       <div>© 2026 ATVMEDIA.</div>
@@ -294,15 +319,11 @@
         <a href="#">Sơ đồ trang</a>
       </div>
     </div>
-
+ 
   </div>
 </footer>
 
-<!-- Back to top -->
-<button id="backToTop" aria-label="Lên đầu trang"><i class="bi bi-arrow-up"></i></button>
 <!-- Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-<script src="/js/header.js"></script>
-<script src="/js/backToTop.js"></script>
 </body>
 </html>

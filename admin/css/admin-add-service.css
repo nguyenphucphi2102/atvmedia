@@ -132,13 +132,13 @@ body {
 
 /* Màu tím đặc trưng cho tiêu đề khung soạn thảo giống ảnh mẫu */
 .label-purple {
-  color: #6f42c1;
+  color: #285b5c;
   font-weight: 700;
   font-size: 1.05rem;
 }
 /* Tùy chỉnh màu sắc tiêu đề nhãn giống ảnh mẫu */
 .label-purple {
-  color: #6f42c1;
+  color: #285b5c;
   font-weight: 700;
   font-size: 0.95rem;
 }
@@ -164,7 +164,7 @@ body {
 
 .form-control:focus,
 .form-select:focus {
-  border-color: #6f42c1;
+  border-color: #285b5c;
   box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.15);
 }
 @media (max-width: 991.98px) {

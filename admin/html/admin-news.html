@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quản lý Tin tức - ATVMEDIA Admin</title>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/css/admin-news.css">
+</head>
+<body>
+
+  <!-- ================= SIDEBAR CHÍNH ================= -->
+  <aside class="admin-sidebar" id="adminSidebar">
+    <a href="#" class="sidebar-brand">
+      <i class="bi bi-speedometer2 me-2"></i> ATVMEDIA
+    </a>
+
+    <div class="sidebar-menu">
+      <ul class="nav flex-column">
+        
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="bi bi-speedometer2 icon-main"></i> Tổng quan
+          </a>
+        </li>
+
+        <!-- Quản lý Dịch vụ -->
+        <li class="nav-item">
+          <a href="#menuDichVu" data-bs-toggle="collapse" class="nav-link" aria-expanded="false">
+            <i class="bi bi-layers icon-main"></i> Quản lý Dịch vụ
+            <i class="bi bi-chevron-down icon-arrow"></i>
+          </a>
+          <div class="collapse sidebar-submenu" id="menuDichVu">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="admin-list-service.html" class="nav-link">Danh sách Dịch vụ</a></li>
+              <li class="nav-item"><a href="admin-add-service.html" class="nav-link">Thêm Dịch vụ mới</a></li>
+              <li class="nav-item"><a href="admin-categories.html" class="nav-link">Danh mục</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Quản lý Tin tức (Active) -->
+        <li class="nav-item">
+          <a href="#menuTinTuc" data-bs-toggle="collapse" class="nav-link active" aria-expanded="true">
+            <i class="bi bi-newspaper icon-main"></i> Quản lý Tin tức
+            <i class="bi bi-chevron-down icon-arrow"></i>
+          </a>
+          <div class="collapse show sidebar-submenu" id="menuTinTuc">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="admin-news.html" class="nav-link">Danh sách tin tức</a></li>
+              <li class="nav-item"><a href="admin-add-news.html" class="nav-link">Thêm tin tức</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="bi bi-envelope-paper icon-main"></i> Liên hệ / Báo giá
+            <span class="badge bg-danger ms-auto rounded-pill">5</span>
+          </a>
+        </li>
+
+        <hr class="border-secondary opacity-25 my-3 mx-3">
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="bi bi-gear icon-main"></i> Cài đặt Hệ thống
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- ================= KHUNG NỘI DUNG BÊN PHẢI ================= -->
+  <div class="admin-wrapper" id="adminWrapper">
+    
+    <!-- TOPBAR -->
+    <header class="admin-topbar">
+      <button class="toggle-btn" id="sidebarToggleBtn">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div class="d-flex align-items-center gap-3">
+        <a href="home.html" target="_blank" class="text-secondary fs-5" title="Xem website"><i class="bi bi-globe"></i></a>
+        
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-decoration-none text-dark dropdown-toggle" data-bs-toggle="dropdown">
+            <img src="https://ui-avatars.com/api/?name=Admin&background=0d9488&color=fff" alt="Avatar" width="32" height="32" class="rounded-circle me-2">
+            <span class="fw-medium">Admin</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 mt-2">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Hồ sơ cá nhân</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-key me-2"></i>Đổi mật khẩu</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-box-arrow-right me-2"></i>Đăng xuất</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- KHU VỰC NỘI DUNG CHÍNH -->
+    <main class="admin-content">
+      
+      <!-- BREADCRUMB -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Tổng quan</a></li>
+          <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Tin tức</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Tất cả bài viết</li>
+        </ol>
+      </nav>
+
+      <!-- CARD CHỨA BẢNG QUẢN LÝ TIN TỨC -->
+      <div class="card border-0 shadow-sm">
+        <div class="card-body p-4">
+          
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h5 class="fw-bold mb-0 text-dark"><i class="bi bi-newspaper me-2 text-teal"></i>Danh sách bài viết</h5>
+            <a href="admin-add-news.html" class="btn btn-teal">
+              <i class="bi bi-plus-lg me-1"></i> Viết bài mới
+            </a>
+          </div>
+
+          <!-- Bảng Dữ Liệu -->
+          <div class="table-responsive">
+            <table class="table table-hover align-middle">
+              <thead class="table-light">
+                <tr>
+                  <th>#</th>
+                  <th>Ảnh</th>
+                  <th>Tiêu đề bài viết</th>
+                  <th>Ngày đăng</th>
+                  <th>Trạng thái</th>
+                  <th class="text-center">Hành động</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" class="thumbnail-img" alt=""></td>
+                  <td>
+                    <div class="fw-bold text-dark text-truncate" style="max-width: 350px;">Top 5 xu hướng chuyển đổi số doanh nghiệp đột phá trong năm 2026</div>
+                  </td>
+                  <td>20/07/2026</td>
+                  <td><span class="badge bg-success">Đã xuất bản</span></td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-outline-primary me-1" title="Sửa"><i class="bi bi-pencil-square"></i></button>
+                    <button class="btn btn-sm btn-outline-danger" title="Xóa"><i class="bi bi-trash"></i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop" class="thumbnail-img" alt=""></td>
+                  <td>
+                    <div class="fw-bold text-dark text-truncate" style="max-width: 350px;">Những lưu ý quan trọng khi thông báo website thương mại điện tử</div>
+                  </td>
+                  <td>18/07/2026</td>
+                  <td><span class="badge bg-success">Đã xuất bản</span></td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-outline-primary me-1" title="Sửa"><i class="bi bi-pencil-square"></i></button>
+                    <button class="btn btn-sm btn-outline-danger" title="Xóa"><i class="bi bi-trash"></i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop" class="thumbnail-img" alt=""></td>
+                  <td>
+                    <div class="fw-bold text-dark text-truncate" style="max-width: 350px;">Lợi ích tuyệt vời của việc tích hợp chữ ký số vào hóa đơn điện tử</div>
+                  </td>
+                  <td>15/07/2026</td>
+                  <td><span class="badge bg-success">Đã xuất bản</span></td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-outline-primary me-1" title="Sửa"><i class="bi bi-pencil-square"></i></button>
+                    <button class="btn btn-sm btn-outline-danger" title="Xóa"><i class="bi bi-trash"></i></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Phân trang -->
+          <nav class="mt-4" aria-label="Page navigation">
+            <ul class="pagination justify-content-end mb-0">
+              <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Trước</a></li>
+              <li class="page-item active"><a class="page-link bg-teal border-teal text-white" href="#" style="background-color: var(--teal-700); border-color: var(--teal-700);">1</a></li>
+              <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+              <li class="page-item"><a class="page-link text-dark" href="#">Sau</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- jQuery & Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script xử lý thu gọn/mở rộng Sidebar chuẩn template -->
+  <script>
+    document.getElementById('sidebarToggleBtn').addEventListener('click', function () {
+      const sidebar = document.getElementById('adminSidebar');
+      const wrapper = document.getElementById('adminWrapper');
+      
+      if (window.innerWidth < 992) {
+        sidebar.classList.toggle('show-mobile');
+      } else {
+        sidebar.classList.toggle('collapsed');
+        wrapper.classList.toggle('expanded');
+      }
+    });
+
+    document.getElementById('adminWrapper').addEventListener('click', function(e) {
+      if (window.innerWidth < 992) {
+        const sidebar = document.getElementById('adminSidebar');
+        if (sidebar.classList.contains('show-mobile')) {
+          sidebar.classList.remove('show-mobile');
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
