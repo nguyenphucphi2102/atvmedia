@@ -228,6 +228,18 @@ body {
   background: var(--lime);
   color: var(--teal-900);
 }
+.site-footer {
+  background-color: var(--teal-900);
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 14px 14px;
+  background-position: 0 0;
+  color: rgba(255, 255, 255, 0.75);
+  padding-top: 4rem;
+  position: relative;
+}
 
 @media (max-width: 767.98px) {
   .site-footer {

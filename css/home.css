@@ -366,6 +366,37 @@ body {
   color: var(--teal-700);
   margin-bottom: 0.5rem;
 }
+.badge-1 {
+  top: 4%;
+  left: 0%;
+  animation: bobbing 5s ease-in-out infinite;
+}
+.badge-2 {
+  bottom: 20%;
+  right: -2%;
+  animation: bobbing 4.5s ease-in-out infinite 0.5s;
+}
+.badge-3 {
+  top: 40%;
+  right: -8%;
+  animation: bobbing 5.5s ease-in-out infinite 1s;
+}
+.badge-4 {
+  bottom: 2%;
+  left: 4%;
+  animation: bobbing 4.8s ease-in-out infinite 0.3s;
+}
+.badge-5 {
+  top: 68%;
+  left: -6%;
+  animation: bobbing 5.2s ease-in-out infinite 0.8s;
+}
+.core-card .core-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  margin-bottom: 0.6rem;
+}
 .core-card span {
   font-weight: 800;
   color: var(--ink);
@@ -407,6 +438,27 @@ body {
 }
 
 @media (max-width: 991.98px) {
+  .float-badge {
+    font-size: 0.72rem;
+    padding: 0.55rem 0.75rem;
+  }
+  .badge-1 {
+    left: 0;
+    top: 0;
+  }
+  .badge-2 {
+    right: 0;
+  }
+  .badge-3 {
+    right: 0;
+  }
+  .badge-4 {
+    left: 0;
+    bottom: 0;
+  }
+  .badge-5 {
+    display: none;
+  }
   .hero {
     padding: 4.5rem 0 3.5rem;
     min-height: auto;
@@ -573,7 +625,12 @@ section {
 
 /* ============ 1. LĨNH VỰC ============ */
 .sec-fields {
-  background: var(--teal-700);
+  background-image:
+    linear-gradient(180deg, rgba(18, 47, 48, 0.88), rgba(18, 47, 48, 0.82)),
+    url("https://images.unsplash.com/photo-1669295384050-a1d4357bd1d7?w=1600&auto=format&fit=crop&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 }
@@ -933,27 +990,25 @@ section {
   height: 100%;
   transition: 0.25s;
   background: var(--white);
+  display: block;
 }
 .news-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 22px 44px rgba(15, 44, 44, 0.16);
 }
-.news-thumb {
+.news-card .img-wrapper {
   height: 170px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  color: var(--white);
+  overflow: hidden;
 }
-.news-thumb.n1 {
-  background: linear-gradient(135deg, var(--teal-700), var(--teal-900));
+.news-card .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
 }
-.news-thumb.n2 {
-  background: linear-gradient(135deg, #3a7c7a, var(--teal-700));
-}
-.news-thumb.n3 {
-  background: linear-gradient(135deg, var(--teal-900), #0a1f20);
+.news-card:hover .img-wrapper img {
+  transform: scale(1.06);
 }
 .news-body {
   padding: 1.3rem;
@@ -970,6 +1025,7 @@ section {
   font-weight: 800;
   margin-bottom: 0.6rem;
   line-height: 1.4;
+  color: var(--ink);
 }
 .news-body p {
   color: var(--muted);
@@ -979,10 +1035,14 @@ section {
 
 /* ============ 8. CTA CUỐI TRANG ============ */
 .sec-cta {
-  background: linear-gradient(120deg, var(--teal-900), var(--teal-700));
+  /* background: linear-gradient(120deg, var(--teal-900), var(--teal-700)); */
+  background: url(https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8b2ZmaWNlJTIwbWVldGluZ3xlbnwwfHwwfHx8MA%3D%3D);
   position: relative;
   overflow: hidden;
   text-align: center;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
 }
 .sec-cta::before,
 .sec-cta::after {
@@ -1032,6 +1092,7 @@ section {
   background: transparent;
   color: var(--lime);
   transform: translateY(-3px);
+  border: 1px solid var(--lime);
 }
 .btn-cta-ghost {
   background: transparent;
@@ -1047,6 +1108,7 @@ section {
 .btn-cta-ghost:hover {
   border-color: var(--white);
   transform: translateY(-3px);
+  color: #c6ff3d;
 }
 @media (max-width: 575.98px) {
   .btn-cta-ghost {
@@ -1069,5 +1131,389 @@ section {
     min-height: 60vh;
     display: flex;
     align-items: center;
+  }
+}
+.panel.panel-main img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+.why-visual .panel-main {
+  overflow: hidden;
+}
+.why-visual .panel-main .why-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+.sec-faq {
+  background: var(--white);
+}
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  background: var(--mist);
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  padding: 0;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.faq-item[open] {
+  background: var(--white);
+  box-shadow: 0 14px 34px rgba(15, 44, 44, 0.1);
+}
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 0.96rem;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary i {
+  flex-shrink: 0;
+  color: var(--teal-700);
+  transition: transform 0.25s;
+}
+.faq-item[open] summary i {
+  transform: rotate(180deg);
+}
+.faq-item summary:hover span {
+  color: var(--teal-700);
+}
+.faq-body {
+  padding: 0 1.5rem 1.3rem;
+}
+.faq-body p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 0;
+}
+.sec-featured {
+  background: var(--mist);
+}
+.featured-card {
+  background: var(--white);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(15, 44, 44, 0.08);
+  transition: 0.25s;
+  height: 100%;
+}
+.featured-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 44px rgba(15, 44, 44, 0.16);
+}
+.featured-img {
+  height: 190px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.featured-tag {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: var(--lime);
+  color: var(--teal-900);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+}
+.featured-body {
+  padding: 1.5rem;
+}
+.featured-body .ic {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(40, 91, 92, 0.08);
+  color: var(--teal-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.featured-body h5 {
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+.featured-body p {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0;
+  line-height: 1.6;
+}
+/* ============ DỰ ÁN TIÊU BIỂU ============ */
+.portfolio-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(15, 44, 44, 0.08);
+  transition: 0.25s;
+  height: 100%;
+}
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 44px rgba(15, 44, 44, 0.16);
+}
+.portfolio-img {
+  height: 190px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.portfolio-cat {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  background: rgba(15, 44, 44, 0.65);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+.portfolio-body {
+  padding: 1.4rem;
+}
+.portfolio-body h5 {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+.portfolio-body p {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ============ BẢNG GIÁ ============ */
+.price-card {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 2rem 1.8rem;
+  box-shadow: 0 14px 34px rgba(15, 44, 44, 0.08);
+  height: 100%;
+  border: 2px solid transparent;
+  transition: 0.25s;
+}
+.price-card:hover {
+  transform: translateY(-6px);
+}
+.price-featured {
+  background: var(--teal-900);
+  border-color: var(--lime);
+  position: relative;
+}
+.price-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--lime);
+  color: var(--teal-900);
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.price-name {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+.price-featured .price-name {
+  color: var(--white);
+}
+.price-value {
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: var(--teal-700);
+  margin-bottom: 0.6rem;
+}
+.price-featured .price-value {
+  color: var(--lime);
+}
+.price-value span {
+  display: block;
+  font-weight: 500;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.price-featured .price-value span {
+  color: rgba(255, 255, 255, 0.6);
+}
+.price-desc {
+  color: var(--muted);
+  font-size: 0.86rem;
+  margin-bottom: 1.4rem;
+}
+.price-featured .price-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+.price-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.6rem;
+}
+.price-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.86rem;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+.price-featured .price-list li {
+  color: rgba(255, 255, 255, 0.9);
+}
+.price-list li i {
+  color: var(--teal-700);
+  font-size: 1rem;
+  margin-top: 0.15rem;
+}
+.price-featured .price-list li i {
+  color: var(--lime);
+}
+.btn-price-outline {
+  display: block;
+  text-align: center;
+  border: 2px solid var(--teal-700);
+  color: var(--teal-700);
+  font-weight: 700;
+  padding: 0.7rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.btn-price-outline:hover {
+  background: var(--teal-700);
+  color: var(--white);
+}
+.btn-price-lime {
+  display: block;
+  text-align: center;
+  background: var(--lime);
+  color: var(--teal-900);
+  font-weight: 800;
+  padding: 0.7rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.btn-price-lime:hover {
+  background: var(--white);
+}
+
+/* ============ ĐỘI NGŨ ============ */
+.team-card {
+  text-align: center;
+}
+.team-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+  transition: 0.25s;
+}
+.team-card:hover .team-photo {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 34px rgba(15, 44, 44, 0.18);
+}
+.team-card h6 {
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+.team-card span {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ============ BẢN ĐỒ ============ */
+.sec-map {
+  padding: 0;
+}
+.map-wrap {
+  background: var(--mist);
+}
+.map-info {
+  padding: 4rem 3rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.map-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem;
+}
+.map-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-size: 0.92rem;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+.map-list li i {
+  color: var(--teal-700);
+  font-size: 1.05rem;
+  margin-top: 0.15rem;
+}
+.btn-map-cta {
+  display: inline-flex;
+  align-items: center;
+  background: var(--teal-700);
+  color: var(--white);
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  width: fit-content;
+  transition: 0.2s;
+}
+.btn-map-cta:hover {
+  background: var(--teal-900);
+}
+.map-frame {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+  display: block;
+}
+@media (max-width: 991.98px) {
+  .map-info {
+    padding: 2.5rem 1.5rem;
+  }
+  .map-frame {
+    min-height: 320px;
   }
 }
